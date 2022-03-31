@@ -8,6 +8,13 @@
 
     + Nó giúp bạn có thể truy cập vào bất kỳ vị trí bộ nhớ nào trong bộ nhớ của máy tính.
 
+    - Con trỏ với mảng:
+    + địa chỉ của của mảng cũng chính là địa chỉ của phần tử đầu tiên trong mảng : &arr == &arr[0]
+
+    + Vd: *ptr = &arr[0]: nghĩa là con trỏ sẽ trỏ vào địa chỉ đầu tiên của mảng và dùng vòng lặp để 
+        truy xuất ra các phần tử trong mảng
+    + con trỏ mảng giá trị là địa chỉ của một biến khác
+
 
 
 */
