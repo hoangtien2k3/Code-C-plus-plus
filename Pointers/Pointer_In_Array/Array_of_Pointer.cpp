@@ -36,7 +36,6 @@
     hoặc ngắn gọn hơn là ptr = arr; vì &arr[0], &arr hoặc arr đều cho chúng ta 
     địa chỉ của phần tử đầu tiên trong mảng arr.
 
-
     - Cũng là in ra toàn bộ giá trị của các phần tử trong mảng arr, nhưng sử dụng con trỏ chúng ta 
     có rất nhiều cách viết khác nhau:
 
