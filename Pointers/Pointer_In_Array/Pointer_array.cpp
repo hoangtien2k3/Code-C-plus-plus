@@ -21,3 +21,18 @@ int main()
     return 0;
 }  
 
+//////////////
+// Truy xuất ra kiểu dữ liệu trong C/C++
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	
+	int value = 5;
+	cout << typeid(&value).name() << endl;
+	
+	system("pause");
+	return 0;
+}
+
