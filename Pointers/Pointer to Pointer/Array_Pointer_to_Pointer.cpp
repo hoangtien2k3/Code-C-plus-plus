@@ -2,7 +2,6 @@
 // Pointer_to_Pointer to Array 1 chiều
 
 #include<iostream>
-
 int main()	{
 
 	int *p1 = NULL;
@@ -19,10 +18,7 @@ int main()	{
     p_to_p[2] = p3;
     delete[] p_to_p;
 
-	return 0;
 }
-
-
 
 //  2D dynamically allocated array
 //  Pointer_to_Pointer to Array 2 chiều :
@@ -76,4 +72,10 @@ int main()	{
 	return 0;
 }
 
+
+
+//////////////////////
+Pointer to pointer to pointer to ...
+	int ***ptrX3;
+	int ******ptrX6;
 
