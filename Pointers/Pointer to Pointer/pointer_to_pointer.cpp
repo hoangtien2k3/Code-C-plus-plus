@@ -1,4 +1,8 @@
 
+// Pointer to Pointer (con trỏ trỏ đến con trỏ)
+
+// Lưu ý: không được gán int **p_to_p = &&value; //not valid ( như vậy là sai)
+
 #include<iostream>
 using namespace std;
 int main()	{
@@ -30,8 +34,6 @@ int main()	{
 
     cout << "Dia chi p_to_p: " << endl;
     cout << &*p_to_p << endl << endl;
-
-
 
 
 
