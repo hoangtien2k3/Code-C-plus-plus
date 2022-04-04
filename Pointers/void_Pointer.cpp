@@ -33,7 +33,7 @@ int main()
     ptr=&data;  // storing the address of data variable in void pointer variable  
     ptr1 = (int*)ptr; // assigning void pointer to integer pointer  
     // ptr1 = static_cast<int *>(ptr);
-    std::cout << "The value of *ptr1 is : " << *ptr1 << std::endl;  
+        std::cout << "The value of *ptr1 is : " << *ptr1 << std::endl;  
 
 
 
