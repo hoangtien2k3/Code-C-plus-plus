@@ -26,4 +26,21 @@ int main()
 }
 
 
+// int *Return_X () {
+//     static int x = 200;
+//     return &x;
+// }
+
+// int main()
+// {
+//     int x = 200;
+// 	// int *pInt = createAnInteger(10);
+//     int *ptr = Return_X();
+// 	cout << *ptr << endl;
+	
+// 	return 0;
+// }       
+
+
+
 
