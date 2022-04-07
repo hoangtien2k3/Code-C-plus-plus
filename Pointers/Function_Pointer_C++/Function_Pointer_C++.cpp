@@ -3,6 +3,7 @@
 
 // syntax:     int (*FunctionPtr) (int, int)
 // Biến và con trỏ
+
 #include<iostream>
 #include<string>
 using namespace std;
@@ -14,8 +15,7 @@ void swapIntValue(int *ptr1, int *ptr2)
 	*ptr2 = temp;
 }
 
-int main()
-{
+int main() {
 	int value1 = 2;
 	int value2 = 5;
 	
@@ -23,7 +23,6 @@ int main()
 	swapIntValue(&value1, &value2);
 	cout << "After swap : " << value1 << " " << value2 << endl;
 	
-	system("pause");
 	return 0;
 }
 
