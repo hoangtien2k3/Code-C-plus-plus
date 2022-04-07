@@ -74,7 +74,7 @@ int main()	{
 
 
 
-//////////////////////
+//! //////////////////////////////
 Pointer to pointer to pointer to ...
 	int ***ptrX3;
 	int ******ptrX6;

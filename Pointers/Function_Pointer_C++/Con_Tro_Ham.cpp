@@ -16,22 +16,51 @@
 
 */
 
-void swapIntValue  (int &value1, int &value2) {
-    int temp = value1;
-    value1 = value2; 
-    value2 = temp;
-}
-=>  Hàm swapValue có không có kiểu trả về, và nó nhận vào 2 tham số đều có kiểu tham chiếu int.
+/*
+    Function pointers syntax:
+    (Cú pháp của một con trỏ hàm có nhiều điểm khác biệt so với cách khai báo con trỏ thông thường.)
+*/
+    //todo:  <return_type> (*<name_of_pointer>)( <data_type_of_parameters> );
+    //! Lưu ý, khi cần lấy địa chỉ của hàm, chúng ta chỉ sử dụng duy nhất tên hàm, không đặt thêm cặp dấu ngoặc vào.
+    //* Ex: void(*pSwap) (int &, int &) = swapValue;
 
-
-+ nên chúng ta có thể khai báo 1 con trỏ để trỏ đến hàm swapValue như sau:
+/*
+    ///! function prototypes
+    int foo();
+    double goo();
+    int hoo(int x);
     
-    void(*pSwap) (int &, int &);
+    ///! function pointer assignments
+    int (*funcPtr1)() = foo; // okay
+    int (*funcPtr2)() = goo; // wrong -- return types don't match!
+    double (*funcPtr4)() = goo; // okay
+    funcPtr1 = hoo; // wrong -- fcnPtr1 has no parameters, but hoo() does
+    int (*funcPtr3)(int) = hoo; // okay
+
+*/
 
 
+#include<iostream>
+#include<string>
+#include<cmath>
+using namespace std;
 
-#include<stdio.h>
-#include<math.h>
+void swapValue(int &value1, int &value2) 
+{
+	int temp = value1;
+	value1 = value2;
+	value2 = temp;
+}
+
+int main()
+{
+	void(*pSwap) (int &, int &) = swapValue; //! Lưu ý, khi cần lấy địa chỉ của hàm, chúng ta chỉ sử dụng duy nhất tên hàm, không đặt thêm cặp dấu ngoặc vào.
+
+	cout << pSwap << endl;
+	cout << swapValue << endl;
+	
+	return 0;
+}
 
 
 
