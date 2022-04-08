@@ -5,6 +5,7 @@
 #include<math.h>
 #include<conio.h>
 #include<stdbool.h>
+#include<string.h>
 
 
 bool CheckNamNhuan(int year) {
@@ -36,16 +37,24 @@ int CheckNgayTrongNam(int day, int month, int year){
 
 int main() {
     int day, month, year;
-    printf ("Nhap vao day: "); scanf ("%d", &day);
-    printf ("Nhap vao month: "); scanf ("%d", &month);
-    printf ("Nhap vao year: "); scanf ("%d", &year);
-    printf ("Tong so ngay la: %d", CheckNgayTrongNam(day, month, year));
+    char TL;
+    do {
+        do {
+            printf ("\nNhap vao day: "); scanf ("%d", &day);
+            printf ("Nhap vao month: "); scanf ("%d", &month);
+            printf ("Nhap vao year: "); scanf ("%d", &year);
+        } while (((day < 0 || day > 31) || (month < 0 || month > 12) || (year < 0 || year > 10000)) && printf ("\nError, Nhap lai: "));
+        printf ("\nTong so ngay: %d", CheckNgayTrongNam(day, month, year));
+        printf ("\nBan co muon tiep tuc(Y, N) : "); TL = getchar();
+    } while (TL == 'Y' || TL == 'y');
+
     return 0;
 }
 
 
 ////////////////////
-// Cách ngắn gọn hơn nhiều
+//! Cách ngắn gọn hơn nhiều
+/*
 #include <stdio.h>
 int main() {
     unsigned int d, m, y, s, i;
@@ -56,11 +65,13 @@ int main() {
     switch ( i ) {
         case 4: case 6: case 9: case 11: s += 30; break;
         case 2: s += 28 + (( y % 4 == 0 && y % 100 ) || y % 400 == 0); break;
-        // case 2: s += (( y % 4 == 0 && y % 100 ) || y % 400 == 0) ? 29 : 28; break;
+        ! case 2: s += (( y % 4 == 0 && y % 100 ) || y % 400 == 0) ? 29 : 28; break;
     default: s += 31;
     }
     printf( "Ngay thu: %u\n", s );
     return 0;
 }
+
+*/
 
 
