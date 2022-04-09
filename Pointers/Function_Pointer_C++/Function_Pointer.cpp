@@ -45,63 +45,63 @@
 
 ///! ////////////////////////////////////////
 
-// #include<iostream>
-// #include<string>
-// #include<cmath>
-// using namespace std;
+#include<iostream>
+#include<string>
+#include<cmath>
+using namespace std;
 
-// bool ascending(int left, int right)
-// {
-// 	return left > right;
-// }
+bool ascending(int left, int right)
+{
+	return left > right;
+}
 
-// bool descending(int left, int right)
-// {
-// 	return left < right;
-// }
+bool descending(int left, int right)
+{
+	return left < right;
+}
 
-// void selectionSort(int *arr, int length, bool (*comparisonFunc)(int, int))
-// {
-// 	for (int i_start = 0; i_start < length; i_start++)
-// 	{
-// 		int minIndex = i_start;
+void selectionSort(int *arr, int length, bool (*comparisonFunc)(int, int))
+{
+	for (int i_start = 0; i_start < length; i_start++)
+	{
+		int minIndex = i_start;
 
-// 		for (int i_current = i_start + 1; i_current < length; i_current++)
-// 		{
-// 			if (comparisonFunc(arr[minIndex], arr[i_current])) // use function pointer as ascending or descending function
-// 			{
-// 				minIndex = i_current;
-// 			}
-// 		}
+		for (int i_current = i_start + 1; i_current < length; i_current++)
+		{
+			if (comparisonFunc(arr[minIndex], arr[i_current])) // use function pointer as ascending or descending function
+			{
+				minIndex = i_current;
+			}
+		}
 
-// 		swap(arr[i_start], arr[minIndex]); // std::swap
-// 	}
-// }
+		swap(arr[i_start], arr[minIndex]); // std::swap
+	}
+}
 
-// int main()
-// {
-// 	int arr[] = { 1, 4, 2, 3, 6, 5, 8, 9, 7 };
-// 	int length = sizeof(arr) / sizeof(int);
+int main()
+{
+	int arr[] = { 1, 4, 2, 3, 6, 5, 8, 9, 7 };
+	int length = sizeof(arr) / sizeof(int);
 
-// 	selectionSort(arr, length, descending);
-//     for (int i=0; i<length; i++) {
-//         std::cout << arr[i] << "\t";
-//     }
-//     std::cout << "\n";
-//     selectionSort(arr, length, ascending);
-//     for (int i=0; i<length; i++) {
-//         std::cout << arr[i] << "\t";
-//     }
+	selectionSort(arr, length, descending);
+    for (int i=0; i<length; i++) {
+        std::cout << arr[i] << "\t";
+    }
+    std::cout << "\n";
+    selectionSort(arr, length, ascending);
+    for (int i=0; i<length; i++) {
+        std::cout << arr[i] << "\t";
+    }
 
-// 	return 0;
-// }
-
-
+	return 0;
+}
 
 
 
-// Array of Function Pointer:
 
+
+
+//! Array of Function Pointer:
 #include<iostream>
 #include<cmath>
 #include<string>
