@@ -45,11 +45,16 @@ int main() {
             printf ("Nhap vao year: "); scanf ("%d", &year);
         } while (((day < 0 || day > 31) || (month < 0 || month > 12) || (year < 0 || year > 10000)) && printf ("\nError, Nhap lai: "));
         printf ("\nTong so ngay: %d", CheckNgayTrongNam(day, month, year));
-        printf ("\nBan co muon tiep tuc(Y, N) : "); TL = getchar();
+        printf ("\nBan co muon tiep tuc(Y, N) : "); fflush(stdin); TL = getchar(); 
     } while (TL == 'Y' || TL == 'y');
 
     return 0;
 }
+
+
+
+
+
 
 
 ////////////////////
