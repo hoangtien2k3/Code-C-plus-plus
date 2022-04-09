@@ -118,7 +118,6 @@ int XOR_operator (int a, int b) {
     return a ^ b;
 }
 
-
 int (*arrfptr[3]) (int, int) = {
     &AND_operator,
     &OR_operator,
