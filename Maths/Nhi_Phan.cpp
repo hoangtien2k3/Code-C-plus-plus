@@ -43,6 +43,7 @@ int main(){
 
 
 
+
 //! Chuyển từ Nhị phân về Thập phân:
 #include<stdio.h>  
 #include<conio.h>  
