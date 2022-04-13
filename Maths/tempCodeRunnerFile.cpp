@@ -1,7 +1,7 @@
 
 #include<iostream>
 #include<cmath>
-
+// in ra tất cả các tập con từ tập {5, 7, 3, 2}
 
 int main() {
     int arr[] = {5, 7, 3, 2};
