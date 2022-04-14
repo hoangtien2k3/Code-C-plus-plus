@@ -22,17 +22,34 @@ int Check_month (int month, int year) {
     return dayofmonth;
 }
 
-void Before_Day_Month_Year (int day, int month, int year) {
+// Ngày trước đó 
+void Before_Day_Month_Year (int day, int month, int year) { // ngày trước đó
     if (day < Check_month(month, year)) {
         day++;
     } else if (month < 12) {
         day = 1;
         month++;
-    } else {
+    } else { // ngày = 30/31 , tháng = 12
         day = month = 1;
         year++;
     }
-    std::cout << "\nDay - Month - Year Continue: " << day << " - "<< month << " - "<< year << std::endl;
+    std::cout << "\nDay - Month - Year Continue: " << day << "/"<< month << "/"<< year << std::endl;
+}
+
+// Ngày sau đó
+void After_Day_Month_Year (int day, int month, int year) {
+    if (day == 1 && month == 1) {
+        day = 31;
+        month = 12;
+        year--;
+    } else if (day <= Check_month(month, year)) {
+        if (day == 1) {
+            month--;
+            day = Check_month(month, year) + 1;
+        }
+        day--;
+    }
+    std::cout << "\nDay - Month - Year After: " << day << "/" << month << "/" << year << std::endl;
 }
 
 int main() {
@@ -48,6 +65,7 @@ int main() {
     } while (day < 1 || day > dayofmonth || month < 0 || month > 31 || year < 1582 && std::cout << "Error, Input again: ");
     
     Before_Day_Month_Year(day, month, year);
+    After_Day_Month_Year(day, month, year);
 
     return 0;
 }
