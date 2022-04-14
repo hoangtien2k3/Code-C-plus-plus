@@ -22,17 +22,16 @@ int CheckNgayTrongThang(int month, int year) {
             ngaytrongthang = 30;
             break;
         default: 
-            return (CheckNamNhuan(year))?(ngaytrongthang = 29):(ngaytrongthang = 28);
+            return ngaytrongthang = 28 + (CheckNamNhuan(year));
     }
     return ngaytrongthang;
 }
 
-int CheckNgayTrongNam(int day, int month, int year){
-    int S = day; 
+int NgayTrongNam(int day, int month, int year){
     for(int i = 1; i < month; i++) {
-        S += CheckNgayTrongThang(i, year); // i để sau vòng for sẽ thay lần lượt thắng cần tính vào
+        day += CheckNgayTrongThang(i, year); // i để sau vòng for sẽ thay lần lượt thắng cần tính vào
     }
-    return S;
+    return day;
 }
 
 int main() {
@@ -43,8 +42,11 @@ int main() {
             printf ("\nNhap vao day: "); scanf ("%d", &day);
             printf ("Nhap vao month: "); scanf ("%d", &month);
             printf ("Nhap vao year: "); scanf ("%d", &year);
-        } while (((day < 0 || day > 31) || (month < 0 || month > 12) || (year < 0 || year > 10000)) && printf ("\nError, Nhap lai: "));
-        printf ("\nTong so ngay: %d", CheckNgayTrongNam(day, month, year));
+            if (day > CheckNgayTrongThang(month, year) || day < 1) {
+                printf ("\nError, Nhap Lai: ");
+            }
+        } while (day < 1 || day > CheckNgayTrongThang(month, year) || month < 0 || month > 12|| year < 0 || year > 10000 && printf("\nError, Nhap lai: "));
+        printf ("\nTong so ngay: %d", NgayTrongNam(day, month, year));
         printf ("\nBan co muon tiep tuc(Y, N) : "); fflush(stdin); TL = getchar(); 
     } while (TL == 'Y' || TL == 'y');
 
