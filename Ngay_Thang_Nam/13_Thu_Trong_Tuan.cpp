@@ -43,10 +43,11 @@ int main() {
     } while ((day<1 || day>ngaycuathang || month<0 || month>12 || year<1582) && std::cout << "Error:Nhap lai: ");
     
     int Dayofweek = ZELLER(day, month, year);
-    if (!Dayofweek) {
+    if ( !Dayofweek ) {
         std::cout << "\nChu nhat!" << std::endl;
     } else {
         std::cout << "\nThu " << Dayofweek + 1 << std::endl;
     }
+    
     return 0;
 }

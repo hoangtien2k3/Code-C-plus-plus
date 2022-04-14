@@ -10,8 +10,8 @@
             1   0 |     0
             1   1 |     1
             
-    ! 2. The | (bitwise OR):    + số khác nhau thì Xor lấy số lớn hơn của 0 và 1
-                                + số giống nhau thì Xor là chính số giống nhau đó
+    ! 2. The | (bitwise OR):    + số khác nhau thì OR lấy số lớn hơn của 0 và 1
+                                + số giống nhau thì OR là chính số giống nhau đó
         VD: 0   0 |     0
             0   1 |     1      
             1   0 |     1
@@ -27,13 +27,21 @@
     ! 4. The << (left shift): (dịch trái <<)
         VD: a;
             a = a << x => a * 2^(x)
+        VD: A             0000 1100
+                                <—
+            B = A << 2    0011 0000
 
     ! 5. The >> (right shift): (dịch phải >>)
         VD: a;
             a = a << x => a / 2^(x)
+        VD: A             0000 1100
+                                —>
+            B = A >> 2    0000 0011
 
     ! 6. The ~ (bitwise NOT): đảo ngược lại số nhị phân đó
-        VD: a = 0101 => ~a = 1010
+        VD: A :       0000 1100
+            B = ~A    1111 0011
+        
         
 */
 
