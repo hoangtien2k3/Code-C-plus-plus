@@ -8,6 +8,15 @@
         * ta phải dùng đến CÔNG THỨC ZELLER là một giải thuật được sáng tạo bởi ZELLER để tính đươc thứ 
         trong bất kỳ ngày nào của năm theo lịch
 
+    Năm nhuận (Leap Year) tính theo lịch Gregorian (từ năm 1582): năm phải chia hết cho 4 và không chia hết cho 100, hoặc năm phải chia hết cho 400.
+    Thứ trong tuần được tính theo công thức Zeller:
+    =>  DayOfWeek = (d+y+y/4-y/100+y/400+(31*m)/12)%7. 
+    Trong đó:
+        + a = (14 – month)/12
+        + y = year – a
+        + m = month + 12*a -2
+    DayOfWeek: 0 (Chủ nhật), 1 (Thứ hai), 2 (Thứ ba), …
+
 */
 
 #include<bits/stdc++.h>
@@ -24,8 +33,8 @@ int Check_Nam_Nhuan (int month, int year) {
 
 int ZELLER (int day, int month, int year) {
     int dayofweek;
-    year -= (14 - month) / 12;
-    month += 12 * ((14 - month) / 12) - 2;
+    year = year - (14 - month) / 12;
+    month = month +  12 * ((14 - month) / 12) - 2;
     dayofweek = (day + year + year/4 - year/100 + year/400 + (31 * month)/12) % 7;
     return dayofweek;
 }
@@ -43,7 +52,7 @@ int main() {
     } while ((day<1 || day>ngaycuathang || month<0 || month>12 || year<1582) && std::cout << "Error:Nhap lai: ");
     
     int Dayofweek = ZELLER(day, month, year);
-    if ( !Dayofweek ) {
+    if ( !Dayofweek ) { //! Dayofweek == 0
         std::cout << "\nChu nhat!" << std::endl;
     } else {
         std::cout << "\nThu " << Dayofweek + 1 << std::endl;
