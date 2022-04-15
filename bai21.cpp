@@ -58,13 +58,11 @@ int main() {
         }
     }
 
-
     if (DiemTong < p1.diemchuan) {
         std::cout << "\nRot - " << DiemTong << std::endl;
     } else {
         std::cout << "\nDau - " << DiemTong << std::endl;
     }
-
 
     return 0;
 }
