@@ -13,9 +13,9 @@
 
 int main() {
     int sodien, thanhtien;
-    std:cout << "Nhap vao so dien tieu thu: ";
+    std::cout << "Nhap vao so dien tieu thu: ";
     std::cin >> sodien;
-    
+
     if (sodien <= 100) {
         thanhtien = sodien * 500;
     } else if (sodien <= 250) {
@@ -26,7 +26,7 @@ int main() {
         thanhtien = sodien * 1500;
     }
 
-    std::cout << "\nSo tien phai tra: " << thanhtien << sttd::endl;
+    std::cout << "\nSo tien phai tra: " << thanhtien << std::endl;
 
     return 0;
 }
