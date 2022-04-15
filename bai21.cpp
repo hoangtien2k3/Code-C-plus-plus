@@ -19,14 +19,11 @@ struct DiemChuan {
     float diemtoan, diemly, diemhoa;
     char KV;
     int doituong;
-
 };
 
 int main() {
     struct DiemChuan p1;
-
     do {
-        
         std::cout << "\nNhap vao diem chuan: ";
         std::cin >> p1.diemchuan;    
         std::cout << "Nhap vao diem 3 mon(Toan - Ly - Hoa): ";
@@ -44,23 +41,21 @@ int main() {
 
     float DiemTong;
 
-    switch(p1.KV) {
-        case 'A': DiemTong = 2; break;
-        case 'B': DiemTong = 1; break;
-        case 'C': DiemTong = 0.5; break;
-        case 'X': DiemTong = 0; break;
-        default: DiemTong = 0; break;
-    }
-
-
-    if (p1.doituong == 1) {
-        DiemTong += p1.diemtoan + p1.diemly + p1.diemhoa + 2.5;
-    } else if (p1.doituong == 2) {
-        DiemTong += p1.diemtoan + p1.diemly + p1.diemhoa + 1.5;
-    } else if (p1.doituong == 3){
-        DiemTong += p1.diemtoan + p1.diemly + p1.diemhoa + 1;
-    } else {
-        DiemTong += p1.diemtoan + p1.diemly + p1.diemhoa;
+    if (p1.diemtoan * p1.diemly * p1.diemhoa) {
+        DiemTong = p1.diemtoan + p1.diemly + p1.diemhoa;
+        switch(p1.KV) {
+            case 'A': DiemTong += 2; break;
+            case 'B': DiemTong += 1; break;
+            case 'C': DiemTong += 0.5; break;
+            case 'X': DiemTong += 0; break;
+            default: DiemTong += 0; break;
+        }
+        switch(p1.doituong) {
+            case 1: DiemTong += p1.diemtoan + p1.diemly + p1.diemhoa + 2.5; break;
+            case 2: DiemTong += p1.diemtoan + p1.diemly + p1.diemhoa + 1.5; break;
+            case 3: DiemTong += p1.diemtoan + p1.diemly + p1.diemhoa + 1; break;
+            default:  DiemTong += p1.diemtoan + p1.diemly + p1.diemhoa; break;
+        }
     }
 
 
@@ -69,8 +64,6 @@ int main() {
     } else {
         std::cout << "\nDau - " << DiemTong << std::endl;
     }
-
-
 
 
     return 0;
