@@ -24,7 +24,7 @@ typedef struct LaiXuat {
     int n; // số năm
 } LaiXuat;
 
-double TienLaiHangNam() {
+float TienLaiHangNam() {
     LaiXuat ptr;
     return (ptr.p * pow((1 + ptr.r), ptr.n));
 }
