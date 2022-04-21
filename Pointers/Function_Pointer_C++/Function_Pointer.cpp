@@ -65,7 +65,6 @@ void selectionSort(int *arr, int length, bool (*comparisonFunc)(int, int))
 	for (int i_start = 0; i_start < length; i_start++)
 	{
 		int minIndex = i_start;
-
 		for (int i_current = i_start + 1; i_current < length; i_current++)
 		{
 			if (comparisonFunc(arr[minIndex], arr[i_current])) // use function pointer as ascending or descending function
@@ -73,7 +72,6 @@ void selectionSort(int *arr, int length, bool (*comparisonFunc)(int, int))
 				minIndex = i_current;
 			}
 		}
-
 		swap(arr[i_start], arr[minIndex]); // std::swap
 	}
 }
