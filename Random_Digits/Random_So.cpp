@@ -1,5 +1,6 @@
 
-/*
+/*  https://nguyenvanhieu.vn/sinh-so-ngau-nhien-trong-c-cpp/#:~:text=2.-,Sinh%20s%E1%BB%91%20ng%E1%BA%ABu%20nhi%C3%AAn%20trong%20C%2FC%2B%2B%20v%E1%BB%9Bi%20srand(),ra%20c%C3%A1c%20s%E1%BB%91%20kh%C3%A1c%20nhau.
+    
     Tuy nhiên, hàm rand() này sẽ không hề random ra các số mới khi bạn chạy code ở các lần sau. 
     Nghĩa là, kết quả của code trên ở mọi lần chạy sẽ đều random ra 5 số giống nhau. 
     Bạn có thể thử chạy đoạn code trên nhiều lần để kiếm chứng.
