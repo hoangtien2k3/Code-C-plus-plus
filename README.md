@@ -8,8 +8,7 @@
 
 ##
 
+![hinh-nen-anime-full-hd-cho-may-tinh-14](https://user-images.githubusercontent.com/91842746/165107004-ec789918-389e-4248-a932-19fe7c2452f3.jpg)
 
-
-![c2073bba41e88eb6d7f9](https://user-images.githubusercontent.com/91842746/164986621-d742eb19-0015-4b71-9f36-22d8a610760b.jpg)
 
 ##
