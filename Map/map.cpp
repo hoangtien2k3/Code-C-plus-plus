@@ -52,14 +52,13 @@ int main() {
 
     // C2
     std::cout << std::endl;
-
     for(auto it : mp) {
         std::cout << it.first << "  " << it.second << std::endl;
     }
 
 
+    // C3
     std::cout << std::endl;
-    // C3:
     for(std::map<int, int>:: iterator it = mp.begin(); it != mp.end(); it++) {
         std::cout << (*it).first << "   " << (*it).second << std::endl;
     }
