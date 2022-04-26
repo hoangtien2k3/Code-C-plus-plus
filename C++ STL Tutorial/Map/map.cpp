@@ -59,7 +59,7 @@ int main() {
 
     // C3
     std::cout << std::endl;
-    for(std::map<int, int>:: iterator it = mp.begin(); it != mp.end(); it++) {
+    for(std::map<int, int>::iterator it = mp.begin(); it != mp.end(); it++) {
         std::cout << (*it).first << "   " << (*it).second << std::endl;
     }
 
