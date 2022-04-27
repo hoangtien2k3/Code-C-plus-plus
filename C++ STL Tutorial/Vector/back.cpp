@@ -11,6 +11,8 @@
     ! Return value
     This function returns the last element of vector
 
+    ! Hàm này sẽ đưa ra cái element cuối cùng của vector
+
 */
 
 
