@@ -24,8 +24,14 @@ using namespace std;
 int main()  
 {
 
-    vector<string>  language{"java","C","C++"};  
-    cout << language.front();  
+    vector<string>  v {"java","C","C++"}; 
+    //c1
+    cout << v.front() << endl;
+    //c2
+    cout << v[0] << endl; // lấy ra phàn tử đầu tiên
+    //c3
+    cout << *(v.begin()) << endl;
+
     
     
     return 0;   

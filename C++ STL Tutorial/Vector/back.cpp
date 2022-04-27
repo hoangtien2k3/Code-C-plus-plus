@@ -23,8 +23,13 @@ using namespace std;
 int main() {  
 
 
-    vector<string> fruit {"SamSung","Apple","Tien"};  
-    cout << fruit.back(); // hàm vector back nó sẽ in ra phần tử cuối cùng Function
+    vector<string> v {"SamSung","Apple","Tien"};  
+    //c1
+    cout << v.back() << endl; // hàm vector back nó sẽ in ra phần tử cuối cùng Function
+    //c2
+    cout << v[v.size() - 1] << endl; // cách lấy ra phần tử cuối cùng
+    //c3
+    cout << *(v.end() - 1) << endl;
 
 
     return 0;   

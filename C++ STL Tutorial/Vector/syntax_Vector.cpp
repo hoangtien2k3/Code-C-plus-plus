@@ -11,7 +11,12 @@
 
 
     ! Syntax Vector C++:
-        vector<object_type> v1;  
+            vector<object_type> v;  
+
+            vector<object_type> v(n); // vector with n elements
+            vector<object_type> v(n, value) // vector n elements with value baland is value. 
+
+    
 
     ! C++ Vector Functions: // Function used to Vector
         Function	            Description
