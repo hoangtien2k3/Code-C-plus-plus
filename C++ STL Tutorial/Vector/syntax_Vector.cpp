@@ -1,7 +1,13 @@
 
 /*
-    A vector is a sequence container class that implements dynamic array, means size automatically changes when appending elements. 
-    A vector stores the elements in contiguous memory locations and allocates the memory as needed at run time.
+    *   A vector is a sequence container class that implements dynamic array, means size automatically changes when appending elements. 
+        A vector stores the elements in contiguous memory locations and allocates the memory as needed at run time.
+
+    * Difference between vector and array: 
+        An array follows static approach, means its size cannot be changed during run time while vector implements dynamic array means 
+        it automatically resizes itself when appending elements.
+
+
 
 
     ! Syntax Vector C++:
@@ -41,6 +47,15 @@
 
 */
 
+/*
+    ! syntax Vector at() C++:
+        vector<object_type>  v;  
+        v.at(k);  
+    
+    return value: 
+
+*/
+
 #include<iostream>  
 #include<vector>  
 using namespace std;  
@@ -48,13 +63,18 @@ using namespace std;
 int main()  
 {  
     vector<string> v1;  
-
     v1.push_back("javaTpoint ");  
     v1.push_back("tutorial");  
 
     for(vector<string>::iterator itr=v1.begin(); itr!=v1.end(); ++itr) {
-        cout << *itr << endl;
+        cout << *itr << " ";
     }
+
+    cout << endl;
+
+    for (auto itr = v1.begin();
+        itr != v1.end(); ++itr)
+            cout << *itr << " ";
     
     return 0;   
 }  
