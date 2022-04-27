@@ -13,8 +13,8 @@
     ! Syntax Vector C++:
         vector<object_type> v1;  
 
-    ! C++ Vector Functions:
-    !   Function	            Description
+    ! C++ Vector Functions: // Function used to Vector
+        Function	            Description
         at()	                It provides a reference to an element.
         back()	                It gives a reference to the last element.
         front()	                It gives a reference to the first element.

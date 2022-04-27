@@ -25,7 +25,7 @@ int main()
 {
 
     vector<string>  language{"java","C","C++"};  
-    cout<<language.front();  
+    cout << language.front();  
     
     
     return 0;   
