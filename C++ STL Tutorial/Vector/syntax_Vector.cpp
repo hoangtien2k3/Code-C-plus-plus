@@ -7,16 +7,12 @@
         An array follows static approach, means its size cannot be changed during run time while vector implements dynamic array means 
         it automatically resizes itself when appending elements.
 
-
-
-
     ! Syntax Vector C++:
             vector<object_type> v;  
 
             vector<object_type> v(n); // vector with n elements
             vector<object_type> v(n, value) // vector n elements with value baland is value. 
 
-    
 
     ! C++ Vector Functions: // Function used to Vector
         Function	            Description
