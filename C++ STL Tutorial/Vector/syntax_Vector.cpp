@@ -95,34 +95,39 @@ using namespace std;
 
 int main()
 {
-    vector<int> v{1, 2, 3, 4, 5, 6, 7, 8, 9};
+    vector<int> v {1, 2, 3, 4, 5, 6, 7, 8, 9};
 
-    //  Duyệt vector trong C++ bằng vòng lặp và index // for index
-    for (short i=0; i< v.size(); i++){
-        cout << v[i] << " "; 
+    // C1
+    for(int i=0; i<v.size(); i++) {
+        cout << v[i] << " ";
     }
-
+    cout << endl;
+    
+    // C2
+    for(int x : v)  {
+        cout << x << " ";
+    }
     cout << endl;
 
-    // Duyệt vector trong C++ bằng vòng lặp dựa trên phạm vi // for each
+    // C3
     for(auto & x : v) {
         cout << x << " ";
     }
-
-
-    cout << endl;
     cout << endl;
 
-    // Duyệt vector trong C++ bằng iterator // for interator // giống kiểu con trỏ
+    // C4
     for(auto itr = v.begin(); itr != v.end(); ++itr) {
         cout << *itr << " ";
     }
-    
     cout << endl;
 
+    // C5
     for(vector<int>::iterator itr = v.begin(); itr != v.end(); ++itr) {
         cout << *itr << " ";
     }
+    cout << endl;
+
+
 
 
     return 0;
