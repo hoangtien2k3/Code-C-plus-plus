@@ -47,7 +47,7 @@ int main()
 }  
 
 
-// Example 2:   insert(iterator,n,val);
+// Example 2:   insert(iterator, n, val);
 #include<iostream>  
 #include<vector>  
 using namespace std;  

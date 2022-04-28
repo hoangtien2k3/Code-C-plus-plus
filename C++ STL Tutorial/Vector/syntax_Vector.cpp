@@ -49,33 +49,83 @@
 */
 
 /*
-    ! syntax Vector at() C++:
-        vector<object_type>  v;  
-        v.at(k);  
-    
-    return value: 
+    Chúng ta có 3 phương pháp duyệt vector trong C++ như sau:
+        + Sử dụng vòng lặp và index trong C++
+        + Sử dụng vòng lặp dựa trên phạm vi.
+        + Sử dụng iterator.
+
+
+    !Syntax: Sử dụng vòng lặp và index trong C++
+        for(int i=0; i<v.size(); i++) {
+            cout << v[i] << " ";
+        }
+
+
+    !Syntax: Sử dụng vòng lặp dựa trên phạm vi.
+        for ( auto & x : v) {
+            cout << x << " ";
+        }
+
+
+            + v : là tên vector
+            + x : là tên một biến dùng để gán từng phần tử được lấy từ vector
+            + auto : là kiểu suy luận giúp tự xác định kiểu dữ liệu của giá trị lấy từ vector
+
+
+    !Syntax: Sử dụng iterator.
+        ! C1:
+        for(vector<int>::iterator itr = v.begin(); itr != v.end(); ++itr) {
+            cout << *itr << " ";
+        }
+
+        ! C2:
+        for(auto itr = v.begin(); itr != v.end(); ++itr) {
+            cout << *itr << " ";
+        }
+
+            + v là tên vector
+            + itr là tên iterator
 
 */
 
-#include<iostream>  
-#include<vector>  
-using namespace std;  
 
-int main()  
-{  
-    vector<string> v1;  
-    v1.push_back("javaTpoint ");  
-    v1.push_back("tutorial");  
+#include <iostream>
+#include <vector>   
+using namespace std;
 
-    for(vector<string>::iterator itr=v1.begin(); itr!=v1.end(); ++itr) {
-        cout << *itr << " ";
+int main()
+{
+    vector<int> v{1, 2, 3, 4, 5, 6, 7, 8, 9};
+
+    //  Duyệt vector trong C++ bằng vòng lặp và index // for index
+    for (short i=0; i< v.size(); i++){
+        cout << v[i] << " "; 
     }
 
     cout << endl;
 
-    for (auto itr = v1.begin();
-        itr != v1.end(); ++itr)
-            cout << *itr << " ";
+    // Duyệt vector trong C++ bằng vòng lặp dựa trên phạm vi // for each
+    for(auto & x : v) {
+        cout << x << " ";
+    }
+
+
+    cout << endl;
+    cout << endl;
+
+    // Duyệt vector trong C++ bằng iterator // for interator // giống kiểu con trỏ
+    for(auto itr = v.begin(); itr != v.end(); ++itr) {
+        cout << *itr << " ";
+    }
     
-    return 0;   
-}  
+    cout << endl;
+
+    for(vector<int>::iterator itr = v.begin(); itr != v.end(); ++itr) {
+        cout << *itr << " ";
+    }
+
+
+    return 0;
+}
+
+
