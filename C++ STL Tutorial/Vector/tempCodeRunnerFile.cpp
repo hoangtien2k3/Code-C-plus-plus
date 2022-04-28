@@ -1,3 +1,1 @@
-    // for(auto itr = v.begin(); itr != v.end(); ++itr) {
-    //     cout << *itr << " ";
-    // }
+    int c=v.capacity();  

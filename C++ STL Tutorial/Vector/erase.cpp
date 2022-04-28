@@ -46,10 +46,10 @@ int main()
     for(int i=0; i<fruit.size(); i++)  
         cout<<fruit[i]<<" ";  
 
-    cout<<'\n';  
+    cout << "\n";  
 
     fruit.erase(fruit.begin() + 1, fruit.begin() + 3);  
-    cout<<"After removing apple and strawbery fruits,"<<'\n';  
+    cout << "After removing apple and strawbery fruits: \t";  
     for(int i=0; i<fruit.size(); i++)  
         cout<<fruit[i]<<" ";  
 
