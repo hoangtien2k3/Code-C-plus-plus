@@ -1,6 +1,7 @@
 
 /*  C++ Vector clear() :
     * This function removes all elements from the vector.
+    ( hàm này sẽ loại bỏ tất cả các phần tử khỏi vector )
 
     !Syntax: 
             v.clear();
@@ -31,7 +32,6 @@ int main()
     cout << "Elements are cleared the vector: ";
     for(int i=0; i<v.size(); i++)  
         cout << v[i];  
-
 
 
     return 0;  

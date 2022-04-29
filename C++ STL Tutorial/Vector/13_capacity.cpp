@@ -2,6 +2,7 @@
 /*  C++ Vector capacity() : sức chứa
 
     * this function detemines the curent capacity of the vector.
+    ( hàm này sẽ quyết đinh xem sức chứa của vector )
 
 
     !Syntax: 
@@ -21,10 +22,10 @@
 using namespace std;  
 int main()  
 {  
+    
     vector<int> v {1, 2, 3, 4, 5};  
     int c = v.capacity();  
-    cout<<"Capacity of the vector is :"<<c;  
-
+    cout << "Capacity of the vector is: " << c;  
 
 
     
