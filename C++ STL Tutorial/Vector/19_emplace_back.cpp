@@ -20,8 +20,8 @@ int main()
     vector<char> v{'C','+'};  
     
     v.emplace_back('+');  
-    for(int i=0;i<v.size();i++)  
-        cout<<v[i];  
+    for(int i=0; i<v.size(); i++)  
+        cout << v[i];  
 
 
     return 0;  
