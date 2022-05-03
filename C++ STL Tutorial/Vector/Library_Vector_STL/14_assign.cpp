@@ -25,12 +25,12 @@
 using namespace std;  
 int main()  
 {  
-    vector<int> v{1,2,3,4,5};  
+    vector<int> v {1,2,3,4,5};  
     vector<int> v1;  // tạo ra một vector mới
 
-    v1.assign(v.begin()+1, v.end()-1);  // gán vector v (cũ) cho vector v1 mới
+    v1.assign(v.begin() + 1, v.end()-1);  // gán vector v (cũ) cho vector v1 mới
 
-    for(int i=0; i < v1.size();i++)  
+    for(int i = 0; i < v1.size(); i++)  
         cout << v1[i] << " "; 
 
 

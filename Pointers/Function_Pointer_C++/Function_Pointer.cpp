@@ -21,6 +21,7 @@
     //! Lưu ý, khi cần lấy địa chỉ của hàm, chúng ta chỉ sử dụng duy nhất tên hàm, không đặt thêm cặp dấu ngoặc vào.
     //* Ex: void(*pSwap) (int &, int &) = swapValue;
 
+
 /*
     ///! function prototypes
     int foo();
@@ -35,6 +36,7 @@
     int (*funcPtr3)(int) = hoo; // okay
 
 */
+
 /*
     ! Lưu ý, tham số mặc định của hàm không áp dụng được cho con trỏ hàm, 
     ! vì tham số mặc định được compiler xác định tại thời điểm compile chương trình, 
