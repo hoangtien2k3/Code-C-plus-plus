@@ -8,7 +8,8 @@
 
     Syntax: 
             v.erase(pos);  
-            v.erase(start_iterator,end_iterator);  
+
+            v.erase(start_iterator, end_iterator);  
 
     Parameter:
     pos: It defines the position of the element which is to be removed from the vector.
@@ -21,17 +22,17 @@
 */
 
 //Example 1:    v.erase(pos); 
-// #include<iostream>  
-// #include<vector>  
-// using namespace std;  
-// int main()  
-// {  
-//     vector<char> v{'C','+','#'};  
-//     v.erase(v.begin()+1);  
-//     for(int i=0;i<v.size();i++)  
-//     cout<<v[i] << " "; 
-//     return 0;  
-// }  
+#include<iostream>  
+#include<vector>  
+using namespace std;  
+int main()  
+{  
+    vector<char> v{'C','+','#'};  
+    v.erase(v.begin()+1);  
+    for(int i=0;i<v.size();i++)  
+    cout<<v[i] << " "; 
+    return 0;  
+}  
 
 
 // Example 2:   v.erase(start_iterator,end_iterator);  

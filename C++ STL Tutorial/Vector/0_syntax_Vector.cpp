@@ -11,6 +11,7 @@
             vector<object_type> v;  
 
             vector<object_type> v(n); // vector with n elements
+
             vector<object_type> v(n, value) // vector n elements with value baland is value. 
 
 
@@ -62,11 +63,10 @@
 
 
     !Syntax: Sử dụng vòng lặp dựa trên phạm vi.
-        for ( auto & x : v) {
+        for (auto & x : v) {
             cout << x << " ";
         }
-
-
+        
             + v : là tên vector
             + x : là tên một biến dùng để gán từng phần tử được lấy từ vector
             + auto : là kiểu suy luận giúp tự xác định kiểu dữ liệu của giá trị lấy từ vector

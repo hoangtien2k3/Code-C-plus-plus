@@ -1,5 +1,5 @@
 
-/*  C++ Vector swap()
+/*  C++ Vector swap(): // hoán đổi 2 vector
 
     * This function is used to exchange the elements specified in two vectors.
 
