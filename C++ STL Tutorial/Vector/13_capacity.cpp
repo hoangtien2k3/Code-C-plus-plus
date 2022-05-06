@@ -24,6 +24,7 @@ int main()
 {  
     
     vector<int> v {1, 2, 3, 4, 5};  
+    
     int c = v.capacity();  
     cout << "Capacity of the vector is: " << c;  
 

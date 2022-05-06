@@ -32,7 +32,7 @@ void InSoNguyenTo(int m, int n, int arr[][100]) {
     std::map<int, int> mp;
     for(int i=0; i<m; i++) {
         for(int j=0; j<n; j++) {
-            if (NguyenTo(arr[i][j]) && mp[arr[i][j]] == 0) {
+            if (NguyenTo(arr[i][j]) && mp[arr[i][j]] == 0) { // mp[arr[i][j]] điều kiện check
                 std::cout << arr[i][j] << " ";
                 mp[arr[i][j]] = 1; // để dánh dấu cái map đã được in ra rồi
             }
@@ -45,7 +45,8 @@ int main() {
     std::cin >> m >> n;
     int arr[100][100];
     for(int i=0; i<m; i++) {
-        for(int j=0; j<n; j++) std::cin >> arr[i][j];
+        for(int j=0; j<n; j++) 
+            std::cin >> arr[i][j];
     } 
     
     InSoNguyenTo(m, n, arr);

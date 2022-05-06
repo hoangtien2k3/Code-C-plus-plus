@@ -25,7 +25,6 @@ void solution(int m, int n, int arr[][100]) {
     int max_value = INT_MIN; // vi ( -10^9 <= A(ij) <= 10^9 )
     for(int i=0; i<m; i++) {
         for(int j=0; j<n; j++) {
-            // max_value = max(max_value, arr[i][j]);
             if (arr[i][j] > max_value) 
                 max_value = arr[i][j];
         }
@@ -46,7 +45,8 @@ int main() {
     std::cin >> m >> n;
     int arr[100][100];
     for(int i=0; i<m; i++) {
-        for(int j=0; j <n; j++) std::cin >> arr[i][j];
+        for(int j=0; j <n; j++) 
+            std::cin >> arr[i][j];
     }
 
     solution(m, n, arr);

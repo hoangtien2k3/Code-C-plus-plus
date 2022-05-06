@@ -4,6 +4,10 @@
 #include <iostream>
 using namespace std;
 
+
+// đây là dạng bài con trỏ cấp 2 nè
+
+
 int main()	{
 
 	//Cấp phát vùng nhớ cho 3 con trỏ kiểu (int *)
