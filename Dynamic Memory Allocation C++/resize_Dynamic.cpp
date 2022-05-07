@@ -9,7 +9,7 @@
 using namespace std;
 
 //! Cách 1:
-void resize(int *&arr, int newsize) {
+void resize(int *&arr, int newsize) { // phải là *&arr để có thể thay đổi được giá trị trong hàm
     delete[] arr;
     arr = new int[newsize];
 }
@@ -42,7 +42,7 @@ int main() {
 using namespace std;
 
 // Cách 2:
-void resize(int **arr, int newsize) {
+void resize(int **arr, int newsize) { // hoặc **arr dùng con trỏ cấp 2 để thay đổi được giá trị trong hàm
     delete[] *arr;
     *arr = new int[newsize];
 }
