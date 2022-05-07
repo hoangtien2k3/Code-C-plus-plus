@@ -3,21 +3,16 @@
     
     + function assigns new contents to the deque container and the size of the container is modified accordingly.
 
-
-
-
     Syntax:
-            void assign(InputIterator first, InputIterator last);  
-            void assign(int n, value_type val);   
-
+                void assign(InputIterator first, InputIterator last);  
+                void assign(int n, value_type val);   
 
 
     Parameter:
         (first,last): It defines the range between which the new elements to be inserted.
 
-        n: It defines the new size of the deque container.
-
-        val: New value to be inserted.
+        n:  It defines the new size of the deque container.
+        val:  New value to be inserted.
 
 
 */
