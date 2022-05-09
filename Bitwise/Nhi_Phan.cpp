@@ -23,7 +23,7 @@
 long long Dec2Bin(int decimalNumber) {
     long long binaryNumber = 0;
     int i = 0;
-    while (decimalNumber != 0){
+    while (decimalNumber != 0) {
         binaryNumber += (decimalNumber % 2) * pow(10, i);
         i++;
         decimalNumber /= 2;

@@ -1,7 +1,8 @@
 
-/*  C++ Deque assign():
+/*  C++ Deque assign():  It assigns new content and replacing the old one. // chỉ định ra một phần tử mới thay thế phần tử cũ
     
-    + function assigns new contents to the deque container and the size of the container is modified accordingly.
+    + function assigns new contents to the deque container and the size of the container is modified 
+    accordingly.
 
     Syntax:
                 void assign(InputIterator first, InputIterator last);  
@@ -17,23 +18,35 @@
 
 */
 
+// #include <iostream>  
+// #include<deque>  
+// using namespace std;  
+// int main()  
+// {  
+//     deque<int> first = {1, 2, 3, 4};  
+//     deque<int> second;  
+
+//     second.assign(first.begin(), first.end());  
+
+//     for(deque<int>::iterator itr = second.begin(); itr != second.end(); ++itr)  
+//         std::cout << *itr << " ";  
+
+
+//     return 0;  
+// }  
+
+
 #include <iostream>  
 #include<deque>  
 using namespace std;  
 int main()  
 {  
-    deque<int> first = {1,2,3,4};  
-    deque<int> second;  
+    deque<int> deq;  
+    deque<int>::iterator itr;  
 
-    deque<int>::iterator itr = second.begin();  
+    deq.assign(5, 6);  
+    for(itr=deq.begin(); itr!=deq.end(); ++itr)  
+        std::cout << *itr <<" ";  
 
-    second.assign(first.begin(), first.end());  
-
-    for(itr = second.begin(); itr != second.end(); ++itr)  
-        std::cout << *itr << " ";  
-
-
-
-
-        return 0;  
+    return 0;  
 }  
