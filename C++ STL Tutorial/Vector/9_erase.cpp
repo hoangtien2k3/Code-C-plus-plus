@@ -28,7 +28,7 @@ using namespace std;
 int main()  
 {  
     vector<char> v{'C','+','#'};  
-    v.erase(v.begin()+1);  
+    v.erase(v.begin() + 1);  
     for(int i=0;i<v.size();i++)  
     cout<<v[i] << " "; 
     return 0;  
