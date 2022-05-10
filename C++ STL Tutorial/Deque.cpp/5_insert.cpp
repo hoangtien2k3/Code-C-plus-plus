@@ -27,10 +27,21 @@ using namespace std;
 int main()  
 {  
     deque<string> language={"java",".net","C"};  
-      
-    ++itr;  
-    language.insert(itr,"C++");  
-    for(deque<string>::iterator itr=language.begin(); itr!=language.end(); ++itr)  
+    deque<string>::iterator itr=language.begin();  
+
+    language.insert(++itr,"C++");  
+    for(itr=language.begin();itr!=language.end();++itr)  
         cout<<*itr<<" ";  
+
+    cout << endl;
+
+    language.insert(language.begin(), 2, "Tien");
+    for(int i=0; i<language.size(); i++) { 
+        cout << language[i] << " ";
+    }
+
+
     return 0;  
 }  
+
+
