@@ -1,5 +1,5 @@
 
-/*  Bài tập quản lý sinh viên trong C/C++
+/*  Bài tập quản lý sinh viên trong C++ : HOANG ANH TIEN
 
     Đề bài: 
         Viết chương trình quản lý sinh viên trong C/C++. 
@@ -76,7 +76,7 @@ int main() {
     idCount = idLonNhat (arraySV, soluongSV);
  
     while(true) {
-        cout << "CHUONG TRINH QUAN LY SINH VIEN C/C++\n";
+        cout << "CHUONG TRINH QUAN LY SINH VIEN C++\n";
         cout << "*************************MENU**************************\n";
         cout << "**  1. Them sinh vien.                               **\n";
         cout << "**  2. Cap nhat thong tin sinh vien boi ID.          **\n";
@@ -386,6 +386,6 @@ void pressAnyKey() {
     system("cls");
 }
 
-
+printf("\n");
 
 

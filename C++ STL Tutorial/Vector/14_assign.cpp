@@ -18,8 +18,6 @@
     val : It defines the value which is to be assigned.
 
 */
-
-
 #include<iostream>  
 #include<vector>  
 using namespace std;  
@@ -33,14 +31,10 @@ int main()
     for(int i = 0; i < v1.size(); i++)  
         cout << v1[i] << " "; 
 
-
     cout << endl;
-
     for(auto & x : v1) {
         cout << x << " ";
     }
-
-
 
     return 0;  
 }  
