@@ -1,5 +1,5 @@
 
-/*  C++ List() : list còn được gọi là danh sách liên kết đôi trong C++.
+/*  C++ List() : list còn được gọi là danh sách liên kết đôi trong C++. (double linked list)
 
     List trong C++ là một danh sách liên kết đôi được sử dụng làm tiêu chuẩn để xử lý 
     các đối tượng chứa nhiều phần tử trong C++.
