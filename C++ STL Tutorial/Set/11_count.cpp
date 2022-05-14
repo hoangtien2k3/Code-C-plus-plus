@@ -18,10 +18,10 @@ int main()
    
     // insert elements in random order  
     mp.insert(30);  
-    mp.insert( 40 );  
-    mp.insert( 60 );  
-    mp.insert( 20);  
-    mp.insert( 50 );  
+    mp.insert(40);  
+    mp.insert(60);  
+    mp.insert(20);  
+    mp.insert(50);  
    
     // checks if key 30 is present or not  
     if (mp.count(30))  

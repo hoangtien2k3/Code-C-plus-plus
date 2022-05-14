@@ -1,5 +1,5 @@
 
-/*  C++ STL Set:
+/*  C++ STL Set: cũng kiểu dữ liệu và duy nhất
 
     + Set trong C++ là một tập hợp các phần tử duy nhất được sắp xếp theo thứ tự cụ thể, 
     và được sử dụng làm tiêu chuẩn để xử lý các đối tượng chứa nhiều phần tử trong C++.
