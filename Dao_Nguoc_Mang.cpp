@@ -22,12 +22,12 @@ void reverseArray2(int a[],int n){
 		j--;
 	}
 
-
-    // for(int i=0; i<len; i++) {
-    //     for(int j=i+1; j<len; j++){
-    //         a[i] ^= a[j] ^= a[i] ^= a[j];
-    //     }
-    // }
+	//!
+    for(int i=0; i<len; i++) {
+        for(int j=i+1; j<len; j++){
+            a[i] ^= a[j] ^= a[i] ^= a[j];
+        }
+    }
 }
 
 // Cách 3:
