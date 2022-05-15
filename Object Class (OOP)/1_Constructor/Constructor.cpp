@@ -1,6 +1,6 @@
 
 /*
-    Constructor
+    Constructor : hay còn gọi là hàm tạo
 
     - Constructor trong C++ là một phương thức đặc biệt được gọi là tự động tại thời điểm tạo đối tượng.
     Nó được sử đụng để khởi tạo thành viên dữ liệu của các đối tượng mới. Constructor đùng tên của lớp hoặc struct
