@@ -24,23 +24,14 @@ class SinhVien {
         string id, name;
         int age;
     public:
-        // SinhVien(string, string, int);
         void nhap();
         void xuat();
-        // ~SinhVien();
+        friend void inthongtin(SinhVien);
 };
 
-
-// SinhVien::SinhVien(string id, string name, int age) {
-//     cout  << "Ham Khoi tao co tham so! " << endl;
-//     this->id = id;
-//     this->name = name;
-//     this->age = age;
-// }
-
-// SinhVien::~SinhVien() {
-//     cout << "Huy constructor tai day!";
-// }
+void inthongtin(SinhVien a) {
+    cout << a.id << " " << a.name << " " << a.age << endl;
+}
 
 void SinhVien::nhap() {
     cout << "Nhap age: "; cin >> age;
@@ -55,20 +46,11 @@ void SinhVien::xuat() {
 
 
 int main() {
-    SinhVien sv[10];
-    int n; cin >> n;
-    for(int i=0; i<n; i++) {
-        sv[i].nhap();
-    }
-    for(int i=0; i<n; i++) {
-        sv[i].xuat();
-    }
+    SinhVien sv;
 
-
-
-
-
-
+    sv.nhap();
+    inthongtin(sv);
+    sv.xuat();
 
     return 0;
 }
