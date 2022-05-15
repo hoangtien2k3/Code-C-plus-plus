@@ -26,7 +26,9 @@ class Account {
     public:  
         int accno; //data member (also instance variable)      
         string name; //data member(also instance variable)  
-        static float rateOfInterest;   
+
+        static float rateOfInterest;   // ở đâu, chúng ta không thể gán giá tri
+
         Account(int accno, string name)   // constructor có tham số
         {    
             this->accno = accno;    
@@ -38,7 +40,7 @@ class Account {
         }     
 };  
 
-float Account::rateOfInterest = 6.5; 
+float Account::rateOfInterest = 6.5; // chúng ta phải tạo và gán giá trị ở đây
 
 int main(void) {  
     Account a1 = Account(201, "Sanjay");  //creating an object of Employee   

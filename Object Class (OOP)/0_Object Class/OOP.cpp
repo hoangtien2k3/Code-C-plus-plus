@@ -16,6 +16,7 @@
 
 
 */
+
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -27,10 +28,27 @@ class SinhVien {
         void nhap();
         void xuat();
         friend void inthongtin(SinhVien);
+        friend void ChuanHoa(SinhVien &);
 };
 
+
+void ChuanHoa(SinhVien &a) {
+    string res = "";
+    stringstream ss(a.name);
+    string token;
+    while(ss >> token) {
+        res += toupper(token[0]);
+        for(int i=1; i<token.length(); ++i) {
+            res += tolower(token[i]);
+        }
+        res += " ";
+    }
+    res.erase(res.length() - 1); 
+    a.name = res;
+}
+
 void inthongtin(SinhVien a) {
-    cout << a.id << " " << a.name << " " << a.age << endl;
+    cout << a.id << "\t" << a.name << "\t" << a.age << endl;
 }
 
 void SinhVien::nhap() {
@@ -49,6 +67,7 @@ int main() {
     SinhVien sv;
 
     sv.nhap();
+    ChuanHoa(sv);
     inthongtin(sv);
     sv.xuat();
 
