@@ -28,7 +28,7 @@
 
     Loại:	            Truy cập ngẫu nhiên:           Thêm xóa tìm kiếm ngẫu nhiên:
     vector	                    O(1)	                            O(N)
-    set, multiset	            chậm	                            O(log N)
+    set, multiset	            chậm	                            O(logN)
   
 
 

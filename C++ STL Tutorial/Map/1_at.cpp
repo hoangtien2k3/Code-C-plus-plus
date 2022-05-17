@@ -29,8 +29,20 @@ int main ()
             // prints value associated with key 102, i.e T  
     cout<<mymap.at(102) << endl;  
             // prints value associated with key 103, i.e Point      
-    cout<<mymap.at(103) << endl;  
+    cout<<mymap.at(103) << endl; 
+
+    cout << endl; 
+
+    for(map<int, string>::iterator itr = mymap.begin(); itr != mymap.end(); ++itr) {
+            cout << itr->first << " " << itr->second << endl; 
+    }
     
+
+    cout << endl;
+    
+    for(auto x : mymap) {
+            cout << x.first << " " << x.second << endl;
+    }
 
 
     return 0;  
