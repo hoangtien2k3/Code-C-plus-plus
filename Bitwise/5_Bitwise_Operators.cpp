@@ -24,6 +24,10 @@
             1   0 |     1
             1   1 |     0
 
+        Tính Chất: 
+            + A ^ A = 0
+            + A ^ 0 = A
+
     ! 4. The << (left shift): (dịch trái <<)
         VD: a;
             a = a << x => a * 2^(x)
