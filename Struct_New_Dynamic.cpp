@@ -21,23 +21,23 @@ Student *alloc_arr_integer(int len) {
 Student Information(int n, Student *students) {
     Student s = students[0];
 	for (int i = 1; i < n; i++) {
-		if (students[i].score > s.score) {
-			s = students[i];
-		}
+		if ((students->score + i) > s.score)
+			s = *(students + i);
 	}
 	delete[] students;
-	cout << "Name: " << s.name << endl;
-	cout << "Age: " << s.age << endl;
-	cout << "Score: " << s.score;
+	cout << "STT" << "\t\t" << "Name" << "\t\t\t" << "Age" << "\t\t\t" << "Score" << endl;
+	for(int i = 0; i < n; i++) {
+		cout << i + 1 << "\t\t" << s.name << "\t\t\t" << s.age << "\t\t\t" << s.score << endl;
+	}
 }
 
 int main() {
-	int n;
-	cin >> n;
-    Student *students;
-    students = alloc_arr_integer(100);
+	int n; cout << "Enter the elements: "; cin >> n;
+    Student *students = alloc_arr_integer(100);
 	for (int i = 0; i < n; i++) {
-		cin >> students[i].name >> students[i].age >> students[i].score;
+		cout << "Enter the Name, Age, Score " << "["<<i + 1<<"]" << endl;
+		cin.ignore();
+		cin >> (students[i].name) >> (students[i].age) >> (students[i].score);
 	}
     Information(n, &*students);
 	return 0;
