@@ -7,6 +7,7 @@
 
     +   ~ Destructor
 
+    + Hàm hủy Destructor không có tham số truyền vào
 
 
 */

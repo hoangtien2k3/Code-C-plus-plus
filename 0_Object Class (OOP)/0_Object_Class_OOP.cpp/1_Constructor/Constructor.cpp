@@ -6,7 +6,7 @@
     Nó được sử đụng để khởi tạo thành viên dữ liệu của các đối tượng mới. Constructor đùng tên của lớp hoặc struct
 
 - Constructor: chia làm hai loại
-        + constructor mặc định
+        + constructor mặc định(không có tham số)
         + constructor có tham số
 
 
@@ -21,13 +21,14 @@
 
 #include <iostream>
 using namespace std;
+
 class Employee {
-public:
-    int id; // data member (bien instance)
-    string name; // data member(bien instance)
-    float salary;
-    Employee(int, string, float);
-    void display();
+    public:
+        int id; // data member (bien instance)
+        string name; // data member(bien instance)
+        float salary;
+        Employee(int, string, float);
+        void display();
 };
 
 Employee::Employee(int id, string name, float salary) {

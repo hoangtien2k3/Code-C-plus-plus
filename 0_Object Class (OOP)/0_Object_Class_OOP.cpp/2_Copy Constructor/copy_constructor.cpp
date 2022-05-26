@@ -67,7 +67,7 @@ int main() {
     d1.setdata(12, 04, 2003);
 
     Demo d2;
-    d2 = d1;
+    d2 = d1; // copy constructor
     
     d2.showdata();
 
