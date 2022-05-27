@@ -65,61 +65,10 @@ void Demo::showdata() {
 int main() {
     Demo d1;
     d1.setdata(12, 04, 2003);
-
     Demo d2;
     d2 = d1; // copy constructor
-    
     d2.showdata();
-
-
     return 0;
 }
 
 
-
-
-
-
-//! /////////////////////////////
-// Deep copy
-#include<bits/stdc++.h>
-using namespace std;
-
-class Demo {
-    public:
-        int a, b;
-        int *p;
-    public:
-        Demo() {
-            p = new int;
-        }
-        Demo(Demo &d) {
-            a = d.a;
-            b = d.b;
-            p = new int;
-            *p = *(d.p);
-        }
-        void setdata();
-        void showdata();
-};
-
-void Demo::setdata(int a, int b, int p) {
-    this->a = a;
-    this->b = b;
-    this->*p = p;
-}
-
-void Demo::showdate() {
-    cout << "a = " << a << endl;
-    cout << "b = " << b << endl;
-    cout << "p = " << *p << endl;
-}
-
-int main() {
-    Demo d1;
-    d1.setdata(12, 04, 2003);
-    Demo d2 = d1;
-    d2.showdata();
-
-    return 0
-}

@@ -24,12 +24,12 @@
 using namespace std;  
 class Account {  
     public:  
-        int accno; //data member (also instance variable)      
-        string name; //data member(also instance variable)  
+        int accno;    
+        string name;
 
-        static float rateOfInterest;   // ở đâu, chúng ta không thể gán giá tri
+        static float rateOfInterest;   // khởi tạo một biến static
 
-        Account(int accno, string name)   // constructor có tham số
+        Account(int accno, string name)   // constructor
         {    
             this->accno = accno;    
             this->name = name;    
@@ -40,10 +40,10 @@ class Account {
         }     
 };  
 
-float Account::rateOfInterest = 6.5; // chúng ta phải tạo và gán giá trị ở đây
+float Account::rateOfInterest = 6.5; // gán giá trị cho biến static 
 
 int main(void) {  
-    Account a1 = Account(201, "Sanjay");  //creating an object of Employee   
+    Account a1 = Account(201, "Sanjay");  
     Account a2 = Account(2003, "HOANG ANH TIEN");
 
     a1.display(); 

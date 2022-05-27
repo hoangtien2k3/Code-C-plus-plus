@@ -32,7 +32,7 @@ class Employee {
 };
 
 Employee::Employee(int id, string name, float salary) {
-    this->id = id;
+    this->id = id;      // con trỏ this
     this->name = name;
     this->salary = salary;
 }
@@ -40,7 +40,6 @@ Employee::Employee(int id, string name, float salary) {
 void Employee::display() {
     cout << id << " " << name << " " << salary << endl;
 }
-
 
 int main(void) {
     Employee e1 = Employee(101, "Phan Van Vinh", 500); // tao doi tuong Employee
