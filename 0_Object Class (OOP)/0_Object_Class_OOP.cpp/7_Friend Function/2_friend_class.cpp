@@ -26,5 +26,6 @@ int main()
     A a;  
     B b;  
     b.display(a);  
+    
     return 0;  
 }  
