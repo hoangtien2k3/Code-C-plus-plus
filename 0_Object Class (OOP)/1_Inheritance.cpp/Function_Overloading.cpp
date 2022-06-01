@@ -14,9 +14,9 @@
 
     ! Operators Overloading in C++:
             syntax: 
-                    Box operator+(const Box&); // nạp chồng toán tử một ngôi
+                    name_class operator+(const name_class& ...); // nạp chồng toán tử một ngôi
 
-                    Box operator+(const Box&, const Box&); // nạp chồng toán tử 2 ngôi.
+                    name_class operator+(const name_class& ..., const name_class& ...); // nạp chồng toán tử 2 ngôi.
 
 
 
@@ -58,50 +58,51 @@ int main(void) {
 
 //  ! ! Operators Overloading in C++: NẠP CHỒNG TOÁN TỬ.
 
-#include <bits/stdc++.h> // ! Nạp chồng toán tử một ngôi
+#include<iostream> // ! nạp chồng toán tử một ngôi.
 using namespace std;
-class phanso 
-{
-private:
-    int tu, mau;
- 
-public:
-    phanso() {
-        tu = mau = 0;
-    }
-    ~phanso()
-    {
-        tu = mau = 0;
-    }
-    void output()
-    {
-        cout << this->tu << "/" << this->mau << endl;
-    }
-    phanso operator +(phanso b)
-    {
-        phanso c;
-        c.tu = this->tu * b.mau + this->mau * b.tu;
-        c.mau = this->mau * b.mau;
-        return c;
-    }    
+#include<cmath>
+
+class PhanSo {
+    public:
+        int tu;
+        int mau;
+    public:
+        void input() {
+            cout << "Nhap vao tu: ";
+            cin >> this->tu;
+            cout << "Nhap vao mau: ";
+            cin >> this->mau;
+        }
+        void display() {
+            cout << this->tu << "/" << this->mau << endl;
+        }
+        PhanSo operator +(const PhanSo& b) {
+            PhanSo c;
+            c.tu = this->tu * b.mau + this->mau * b.tu;
+            c.mau = this->mau * b.mau;
+            return c;
+        }
 };
-int main()
-{
-    phanso a, b, c;
 
-    a(1, 2);
-    b(3, 4);
-    c = a + b;  
-    c.output();
+int main() {
+    PhanSo a, b, c;
 
-    return 0; 
+    a.input();
+    b.input();
+
+    c = a + b;
+    c.display();
+
+    return 0;
 }
 
 
 
 
 
-//  ! ! Operators Overloading in C++: NẠP CHỒNG TOÁN TỬ.
+
+
+//  ! Operators Overloading in C++: NẠP CHỒNG TOÁN TỬ.
 
 #include <bits/stdc++.h> // ! nạp chồng toán tử 2 ngôi.
 using namespace std;
@@ -112,21 +113,17 @@ private:
     int tu, mau;
  
 public:
-    phanso()
-    {
-        tu = mau = 0;
-    }
- 
-    ~phanso()
-    {
-        tu = mau = 0;
+    void input() {
+        cout << "Input tu: "; 
+        cin >> this->tu;
+        cout << "Input mau: ";
+        cin >> this->mau;
     }
     void output()
     {
         cout << this->tu << "/" << this->mau << endl;
     }
-    
-    friend phanso operator +(phanso a, phanso b)
+    friend phanso operator +(const phanso &a, const phanso &b) //* cần có từ khóa "friend" , hàm nạp chồng được coi là hàm bạn. 
     {
         phanso c;
         c.tu = a.tu * b.mau + a.mau * b.tu;
@@ -138,13 +135,17 @@ public:
 int main()
 {
     phanso a, b, c;
- 
-    a(1, 2);
-    b(3, 4);
-    c = a + b;  c.output();
+    a.input();
+    b.input();
+
+    c = a + b;  
+    c.output();
 
     return 0;
 }
+
+
+
 
 
 
