@@ -16,14 +16,14 @@
     !  Types Of Inheritance:
 
         + Single inheritance : kế thừa đơn
-        + Multiple inheritance : kế thừa nhiều
+        + Multiple inheritance : đa kế thừa(nhiều)
         + Hierarchical inheritance : kế thừa phân cấp, thứ bậc
         + Multilevel inheritance : kế thừa đa cấp
         + Hybrid inheritance : kế thừa lai
 
 
-    Base class:  lớp cha
-    Driver class: lớp con
+    Base class:  (child class) lớp cha
+    Driver class: (parent class) lớp con
 
 
     ! C++ Single Inheritance: Tính kế thừa đơn
@@ -218,7 +218,7 @@ class B : public A
     void get_b()  
     {  
         std::cout << "Enter the value of 'b' : " << std::endl;  
-       cin>>b;  
+        cin>>b;  
     }  
 };  
 
@@ -258,7 +258,7 @@ int main()
 
 
 
-// C++ Hierarchial Inheritance: Tính phân cấp cal
+// ! C++ Hierarchial Inheritance: Tính kế thừa phân cấp, thứ bậc.
 /*
 class A  
 {  
@@ -290,6 +290,7 @@ class Shape                 // Declaration of base class.
         b = m;  
     }  
 };  
+
 class Rectangle : public Shape  // inheriting Shape class  
 {  
     public:  
@@ -299,6 +300,7 @@ class Rectangle : public Shape  // inheriting Shape class
         return result;  
     }  
 };  
+
 class Triangle : public Shape    // inheriting Shape class  
 {  
     public:  
@@ -308,11 +310,12 @@ class Triangle : public Shape    // inheriting Shape class
         return result;  
     }  
 };  
+
 int main()  
 {  
     Rectangle r;  
     Triangle t;  
-    int length,breadth,base,height;  
+    int length, breadth, base, height;  
     std::cout << "Enter the length and breadth of a rectangle: " << std::endl;  
     cin>>length>>breadth;  
     r.get_data(length,breadth);  
@@ -325,6 +328,8 @@ int main()
     std::cout <<"Area of the triangle is : "  << n<<std::endl;  
     return 0;  
 }  
+
+
 
 
 
