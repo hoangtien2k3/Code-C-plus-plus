@@ -1,6 +1,6 @@
 
 /*
-    ! Overloading: NẠP CHỒNG PHƯƠNG THỨC.
+    ! Overloading: NẠP CHỒNG
         / Overloading là một kĩ thuật cho phép trong cùng một class có thể có nhiều phương thức cùng tên nhưng khác nhau 
         về số lượng tham số hoặc kiểu dữ liệu tham số. /
 
@@ -22,7 +22,7 @@
 
 */
 
-// ! Overloading : Nạp chồng phương thức:
+// ! Overloading : Nạp Chồng
 #include <iostream>
 using namespace std;
  

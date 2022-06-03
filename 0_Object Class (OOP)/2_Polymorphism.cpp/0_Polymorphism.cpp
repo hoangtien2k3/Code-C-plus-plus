@@ -56,11 +56,8 @@ int main(void)
 {
    inDuLieu idl;
  
-   // Goi ham hamIn de in so nguyen
-   idl.hamIn(1235);
-   // Goi ham hamIn de in so thuc
+   idl.hamIn(1235); 
    idl.hamIn(67.02);
-   // Goi ham hamIn de in chuoi
    idl.hamIn("Codelearn.io");
  
    return 0;
@@ -167,12 +164,37 @@ class mayAcer: public Mayvitinh{
 }; 
 int main(){
     mayAcer may1; 
+
     Mayvitinh *tenmay = &may1;
     tenmay->show(); 
+
+    return 0;
 }
 
 
 
+#include <iostream>
+using namespace std;
+class Mayvitinh{  
+	public: 	 	 	
+	void show(){
+	    cout << "mayvitinh" << endl;
+	}
+}; 
+class mayAcer: public Mayvitinh{  	
+    public: 	 	 	
+    void show(){
+        cout << "mayAcer" << endl;
+    }
+}; 
+int main(){
+    mayAcer may1; 
+
+    Mayvitinh *tenmay = &may1;
+    tenmay->show(); 
+
+    return 0;
+}
 
 
 
