@@ -4,22 +4,29 @@
 
     - Compile Time Polymorphism:
        
-       + The function to be invoked(gọi, biết tới) is know at the complite time.
+        + The function to be invoked(gọi, biết tới) is know at the complite time.
 
-        + Overloading is a compile time polymorphism where more than one method is having the same name but with the different 
+        + "Overloading" is a compile time polymorphism where more than one method is having the same name but with the different 
         number of parameters or the type of the parameters.
 
+        + It is achieved by function overloading and operator overloading.
 
+        + It provides fast execution as it is known at the compile time.
 
+        + It is less flexible as mainly all the things execute at the compile time.
 
+    - Run Time Poltmorphism:    
 
+        + The function to be invoked, í know at the run time.
 
-    - Run Time Poltmorphism:
-        +The function to be invoked(goi), í know at the run time.
+        + Overriding is a run time polymorphism where more than one method is having the same name, number of parameters and the type of the parameters.
 
+        + It is achieved by virtual functions and pointers.
 
+        + It provides slow execution as it is known at the run time.
 
-
+        + It is more flexible as all the things execute at the run time.
+    
 
 
 
