@@ -43,7 +43,7 @@ class inDuLieu
         cout << "In so nguyen: " << i << endl;
       }
 
-      void hamIn(double  f) {
+      void hamIn(double  f) {       
         cout << "In so thuc: " << f << endl;
       }
 

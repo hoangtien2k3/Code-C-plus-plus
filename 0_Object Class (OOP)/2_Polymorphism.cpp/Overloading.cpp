@@ -25,7 +25,7 @@
 // ! Overloading : Nạp Chồng
 #include <iostream>
 using namespace std;
- 
+
 class printData {
     public:
         void print(int i) {
@@ -57,7 +57,6 @@ int main(void) {
 
 
 //  ! ! Operators Overloading in C++: NẠP CHỒNG TOÁN TỬ.
-
 #include<iostream> // ! nạp chồng toán tử một ngôi.
 using namespace std;
 #include<cmath>
