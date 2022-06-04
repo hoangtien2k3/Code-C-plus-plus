@@ -33,7 +33,6 @@ class A {
         void print() {
             cout << name  << " - " << address << " - ";
         }
-
         void display() {
             cout << "Base class function!!!" << endl;
         }

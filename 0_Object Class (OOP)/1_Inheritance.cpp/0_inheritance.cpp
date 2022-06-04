@@ -34,7 +34,6 @@
 
     !  Multiple inheritance : kế thừa nhiều.
 
-
     ! C++ Hybrid Inheritance : Tính kế thừa kết hợp.
     ( Hybrid inheritance is a combination of more than one type of inheritance.)
 
