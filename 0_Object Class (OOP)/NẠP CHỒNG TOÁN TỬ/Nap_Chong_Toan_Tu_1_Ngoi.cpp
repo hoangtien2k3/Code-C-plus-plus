@@ -29,16 +29,19 @@ public:
         met = 0;
         centimet = 0;
     }
-    KhoangCach(int m, int c) {
-        met = m;
-        centimet = c;
+    KhoangCach(int met, int centimet) {
+        this->met = met;
+        this->centimet = centimet;
     }
+    // ~KhoangCach(int met, int centimet) {
+    //     this->met = met;
+    //     this->centimet = centimet;
+    // }
     // phuong thuc de hien thi khoang cach
     void hienthiKC()
     {
         cout << "Khoang cach bang m la: " << met << endl;
         cout << "Khoang cach bang cm la: " << centimet << endl;
-        cout << "\n\n================================\n\n" << endl;
     }
     // nap chong toan tu (-)
     KhoangCach operator- ()
@@ -56,5 +59,13 @@ int main()
     K1.hienthiKC();    // hien thi K1
     -K2;               // ap dung su phu dinh
     K2.hienthiKC();    // hien thi K2
+
+    KhoangCach obj1;
+
+    obj1 = -K1 - K2;
+
+    obj1.hienthiKC();
+
+
     return 0;
 }

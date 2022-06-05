@@ -23,15 +23,13 @@ class phanso {
         int tuso;
         int mauso;
     public:
-        phanso() { // constructor khoi tao
-            tuso = 0;
-            mauso = 1;
+        phanso() : tuso(0), mauso(1) {} // ham tao 
+        
+        ~phanso() {
+            this->tuso = 0;
+            this->mauso = 1;
         }
-        ~phanso() { // constructor huy
-            tuso = 0;
-            mauso = 1;
-        }
-
+        
         void input() {
             cout << "Nhap vao tuso: "; cin >> this->tuso;
             cout << "Nhap vao mauso: "; cin >> this->mauso;
