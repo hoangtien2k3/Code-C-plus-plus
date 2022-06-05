@@ -13,10 +13,10 @@
 
 
     ! Operators Overloading in C++:
-            syntax: 
-                    name_class operator+(const name_class& ...); // nạp chồng toán tử một ngôi
+        syntax: 
+                name_class operator+(const name_class& ...); // nạp chồng toán tử một ngôi
 
-                    name_class operator+(const name_class& ..., const name_class& ...); // nạp chồng toán tử 2 ngôi.
+                name_class operator+(const name_class& ..., const name_class& ...); // nạp chồng toán tử 2 ngôi.
 
 
 

@@ -2,7 +2,7 @@
 
 // ! Differences b/w compile time and run time polymorphism.
 /*
-    - Compile Time Polymorphism:
+    *Compile Time Polymorphism:
        
         + The function to be invoked(gọi, biết tới) is know at the complite time.
 
@@ -17,7 +17,7 @@
 
 
 
-    - Run Time Poltmorphism:    
+    *Run Time Poltmorphism:    
 
         + The function to be invoked, í know at the run time.
 

@@ -73,6 +73,10 @@ using namespace std;
 
 class Box
 {
+    private:
+        double chieudai;      // chieu dai cua mot box
+        double chieurong;     // Chieu rong cua mot box
+        double chieucao;      // Chieu cao cua mot box
     public:
         double tinhTheTich(void)
         {
@@ -99,10 +103,6 @@ class Box
             box.chieucao = this->chieucao + b.chieucao;
             return box;
         }
-    private:
-        double chieudai;      // chieu dai cua mot box
-        double chieurong;     // Chieu rong cua mot box
-        double chieucao;      // Chieu cao cua mot box
 };
 
 int main( )
