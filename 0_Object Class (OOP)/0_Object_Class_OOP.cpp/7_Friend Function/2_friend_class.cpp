@@ -15,10 +15,10 @@ class A
 class B  
 {  
     public:  
-    void display(A &a)  
-    {  
-        cout << "value of x is : " << a.x;  
-    }  
+        void display(A &a)  
+        {  
+            cout << "value of x is : " << a.x;  
+        }  
 };  
 
 int main()  

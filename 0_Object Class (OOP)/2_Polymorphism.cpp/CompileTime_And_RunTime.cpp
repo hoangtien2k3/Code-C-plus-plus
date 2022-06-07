@@ -57,18 +57,12 @@ int main()
     derived obj1; 
     p = &obj1;
   
-
     p->fun_1(); // -> fun_1 // (base class)
-  
     p->fun_2();
-  
     p->fun_3();
-  
     p->fun_4();
-  
     obj1.fun_4(5);
 
-    
     return 0;
 }  
 
