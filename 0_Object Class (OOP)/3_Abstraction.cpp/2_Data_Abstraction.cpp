@@ -25,13 +25,11 @@ class Circle : public Shape
     }    
 };    
 int main( ) {  
-    Rectangle rec;  
+    Rectangle rec;
     
     Circle cir;  
     rec.draw();    
     cir.draw();   
-
-
 
    return 0;  
 }  
