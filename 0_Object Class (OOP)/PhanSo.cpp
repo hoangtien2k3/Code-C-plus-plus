@@ -1,4 +1,3 @@
-
 // Rút Gọn Phân Số OOP
 
 #include<bits/stdc++.h>
