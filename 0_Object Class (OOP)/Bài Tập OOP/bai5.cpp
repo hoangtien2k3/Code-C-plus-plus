@@ -22,7 +22,10 @@ class SinhVien {
 };
 
 istream& operator >> (istream& in, SinhVien &a) {
-    in >> a.masv >> a.ten >> a.lop >> a.email;
+    in >> a.masv;
+    cin.ignore();
+    getline(cin, a.ten);
+    in >> a.lop >> a.email;
     return in;
 }
 
