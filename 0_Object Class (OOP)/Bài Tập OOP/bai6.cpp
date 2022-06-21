@@ -45,6 +45,7 @@ int main() {
     sort(sv.begin(), sv.end());
     for(SinhVien x : sv) {
         cout << x;
+        
     }
 
     return 0;

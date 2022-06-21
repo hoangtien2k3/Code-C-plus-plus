@@ -323,7 +323,7 @@ void sapXepTheoTen(SV a[], int n) {
             strcpy(tenSV2, a[j].ten);
             if(strcmp(strupr(tenSV1), strupr(tenSV2)) > 0) {
                 tmp = a[i];
-                a[i] = a[j];
+                a[i] = a[j]; 
                 a[j] = tmp;
             }
         }
