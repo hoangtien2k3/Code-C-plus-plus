@@ -14,7 +14,6 @@
 
 
     !  Types Of Inheritance:
-
         + Single inheritance : kế thừa đơn
         + Multiple inheritance : đa kế thừa(nhiều)
         + Hierarchical inheritance : kế thừa phân cấp, thứ bậc
@@ -25,19 +24,18 @@
     Base class:  (child class) lớp cha
     Driver class: (parent class) lớp con
 
-
     ! C++ Single Inheritance: Tính kế thừa đơn
     ( Single inheritance is defined as the inheritance in which a derived class is inherited from the only one base class.)
 
-    ! C++ Multilevel Inheritance : Tính kết thừa nhiều.
+    ! C++ Multilevel Inheritance : Tính kế thừa đa cấp
     ( Multilevel inheritance is a process of deriving a class from another derived class. )
 
-    !  Multiple inheritance : kế thừa nhiều.
+    ! C++ Multiple inheritance : kế thừa nhiều.
 
-    ! C++ Hybrid Inheritance : Tính kế thừa kết hợp.
+    ! C++ Hybrid Inheritance : Tính kế thừa lai
     ( Hybrid inheritance is a combination of more than one type of inheritance.)
 
-    ! Hierarchical inheritance : kế thừa phân cấp, thứ bậc.
+    ! C++ Hierarchical inheritance : kế thừa phân cấp, thứ bậc.
     (Hierarchical inheritance is defined as the process of deriving more than one class from a base class.)
 
 
@@ -48,7 +46,7 @@
 #include<cmath>
 using namespace std;
 
-class Account {
+class Account { // base class: lớp cơ sở (lớp cha)
     public:
         float salary = 600000;
         int a = 4;
@@ -61,7 +59,7 @@ class Account {
         }
 };
 
-class Programer : public Account {
+class Programer : public Account { // driver class: lớp dẫn xuất (lớp con)
     public:
         float bonus = 5000;
         void bark() {
@@ -72,14 +70,12 @@ class Programer : public Account {
 
 int main() {
     Programer p1;
-
     cout << "Salary: " << p1.salary << endl;
     cout << "Bonus: " << p1.bonus << endl;
     p1.eat();
     p1.bark();
     p1.result;
-    cout << "Ket Qua a * b = " << ""<<p1.a<<" * " << ""<<p1.b<<" = " << p1.result << endl;
-
+    cout << "Ket Qua a * b = " << " "<< p1.a << " * " << " " << p1.b << " = " << p1.result << endl;
     return 0;
 }
 
@@ -94,10 +90,10 @@ class Animal {
     public:  
         void eat() {   
             cout<<"Eating..."<<endl;   
-}    
+        }    
 };  
 
-class Dog: public Animal   
+class Dog : public Animal   
 {    
     public:  
         void bark(){  
@@ -105,7 +101,7 @@ class Dog: public Animal
         }    
 }; 
 
-class BabyDog: public Dog   
+class BabyDog : public Dog   
 {    
     public:  
         void weep() {  
@@ -135,40 +131,42 @@ int main(void) {
 */
 #include <iostream>  
 using namespace std;  
-class A  
+
+class A  // base class A
 {  
     protected:  
         int a;  
     public:  
-    void get_a(int n)  
-    {  
-        a = n;  
-    }  
-    void display() {
-        cout << "Hoang Anh Tien" << endl;
-    }
+        void get_a(int n)  
+        {  
+            this->a = n;  
+        }  
+        void display() {
+            cout << "Hoang Anh Tien" << endl;
+        }
 };  
   
-class B  
+class B  // base class B
 {  
     protected:  
         int b;  
     public:  
-    void get_b(int n)  
-    {  
-        b = n;  
-    }  
-    void display() {
-        cout << "Dep Trai!!!" << endl;
-    }
+        void get_b(int n)  
+        {  
+            this->b = n;  
+        }  
+        void display() {
+            cout << "Tien Dep Trai!!!" << endl;
+        }
 };  
+
 class C : public A, public B  
 {  
     public:  
     void display()  
     {  
-        std::cout << "The value of a is : " << a << std::endl;  
-        std::cout << "The value of b is : " << b << std::endl;  
+        cout << "The value of a is : " << a << std::endl;  
+        cout << "The value of b is : " << b << std::endl;  
         cout<<"Addition of a and b is : "<< a + b << endl;
     }  
     void view() {
@@ -193,44 +191,44 @@ int main()
 
 
 
-// ! C++ Hybrid Inheritance : Tính kế thừa kết hợp.
+// ! C++ Hybrid Inheritance : Tính kế thừa lai. (hay multilever inheritance + single inheritance )
 #include <iostream>  
 using namespace std;  
 
-class A  
+class A  // base class A
 {  
     protected:  
         int a;  
     public:  
-    void get_a()  
-    {  
-       std::cout << "Enter the value of 'a' : " << std::endl;  
-       cin>>a;  
-    }  
+        void get_a()  
+        {  
+        std::cout << "Enter the value of 'a' : " << std::endl;  
+        cin>>a;  
+        }  
 };  
   
-class B : public A   
+class B : public A   // class B kế thừa của class A
 {  
     protected:  
         int b;  
     public:  
-    void get_b()  
-    {  
-        std::cout << "Enter the value of 'b' : " << std::endl;  
-        cin>>b;  
-    }  
+        void get_b()  
+        {  
+            std::cout << "Enter the value of 'b' : " << std::endl;  
+            cin>>b;  
+        }  
 };  
 
-class C   
+class C   // base class C
 {  
     protected:  
         int c;  
     public:  
-    void get_c()  
-    {  
-        std::cout << "Enter the value of c is : " << std::endl;  
-        cin >> c;  
-    }  
+        void get_c()  
+        {  
+            std::cout << "Enter the value of c is : " << std::endl;  
+            cin >> c;  
+        }  
 };  
   
 class D : public B, public C  // vì bản thân class B đã kế thừa từ class A 
@@ -238,14 +236,15 @@ class D : public B, public C  // vì bản thân class B đã kế thừa từ c
     protected:  
         int d;  
     public:  
-    void mul()  
-    {  
-         get_a();  
-         get_b();  
-         get_c();  
-         std::cout << "Multiplication of a,b,c is : " << a * b * c << std::endl;  
-    }  
+        void mul()  
+        {  
+            get_a();  
+            get_b();  
+            get_c();  
+            std::cout << "Multiplication of a,b,c is : " << a * b * c << std::endl;  
+        }  
 };  
+
 int main()  
 {  
     D d;  

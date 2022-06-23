@@ -1,61 +1,28 @@
 
+#include<iostream>
+using namespace std;
 
-#include<stdio.h>
-#include<string.h>
-#include<math.h>
-#include<stdbool.h>
-#include<stdlib.h>
+// class Math {
+// public:
+//     static int max(int a, int b) { // vì a và b đều là biến static mới làm được nhé
+//         return a > b ? a : b;
+//     }
+//     static int min(int a, int b) {
+//         return a < b ? a : b;
+//     }
+// };
 
-
-void dao_nguo_chuoi(char str[]) {
-    for(int i = strlen(str) - 1; i >= 0; i--) {
-        printf("%c", str[i]);
+class Math {
+public:
+    static double pi;
+    static double getpi() {
+        return pi;
     }
-}
+};
 
-void Ky_Tu_Hoa(char str[]) {
-    for(int i=0; i<strlen(str); i++) {
-        if (str[i] >= 'a' && str[i] <= 'z') {
-            str[i] -= 32;
-        }
-    }
-    printf("\n%s", str);
-}
-
-
-void str_reverse(char str[]) {
-    int length = strlen(str);
-    for(int i=0; i<length/2; i++) {
-        char temp = str[i];
-        str[i] = str[length-i-1];
-        str[length-i-1] = temp;
-    }
-    printf("\nChuoi dao nguoc: %s", str);
-}
-
+double Math::pi = 3.14;
 
 int main() {
-    char str[100];
-    printf("Nhap vao chuoi: ");
-    gets(str);
-
-    dao_nguo_chuoi(str);
-
-    // printf("\nDao nguoc chuoi: %s", strrev(str));
-    printf("\nCHUOI hoa: %s", strupr(str));
-
-
-    Ky_Tu_Hoa(str);
-
-
-    str_reverse(str);
-
-    printf("\nDao Nguoc: %s", DaoNguoc(str));
-
-
-
-
-    printf("\nSize string: %d", strlen(str));
-
+    cout << Math::getpi() << endl;
     return 0;
 }
