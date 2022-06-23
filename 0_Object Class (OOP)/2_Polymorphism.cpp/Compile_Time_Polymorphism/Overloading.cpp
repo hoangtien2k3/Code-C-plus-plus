@@ -1,15 +1,8 @@
 
 /*
-    ! Overloading: NẠP CHỒNG
-        / Overloading là một kĩ thuật cho phép trong cùng một class có thể có nhiều phương thức CÙNG TÊN nhưng khác nhau 
-        về số lượng tham số hoặc kiểu dữ liệu tham số. /
-
-
-`   Example: 
-        / Ví dụ chúng ta có hàm tinhTong dùng để cộng hai số nguyên. Khi muốn cộng ba số nguyên không lẽ tôi lại phải viết một hàm
-         với tên khác(chẳng hạn tinhTong1) và truyền vào 3 số nguyên hay sao? Như vậy thì code sẽ trở nên phức tạp hơn trong khi 
-         hai hàm có cùng một mục đích là cộng các số nguyên lại với nhau. /
-
+    ! Overloading: NẠP CHỒNG (nạp chồng phương thức)
+        - Overloading là một kĩ thuật cho phép trong cùng một class có thể có nhiều phương thức "CÙNG TÊN" nhưng khác nhau 
+        về số lượng tham số hoặc kiểu dữ liệu tham số. 
 
 
     ! Operators Overloading in C++:
@@ -21,7 +14,7 @@
 
 
 */
-
+// VD1:
 // ! Overloading : Nạp Chồng
 #include <iostream>
 using namespace std;
@@ -51,7 +44,28 @@ int main(void) {
 
 
 
+//VD2:
+#include<iostream>
+using namespace std;
 
+class Math {
+private:
+    int a, b, c;
+public:
+    int max(int a, int b) {
+        return a > b ? a : b;
+    }
+    int max(int a, int b, int c) {
+        return max(max(a, b), c);
+    }
+};
+
+int main() {
+    Math math;
+    cout << math.max(3, 5) << endl;
+    cout << math.max(3, 5, 7) << endl;
+    return 0;
+}
 
 
 

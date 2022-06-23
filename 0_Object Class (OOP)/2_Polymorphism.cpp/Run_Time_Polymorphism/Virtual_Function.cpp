@@ -14,37 +14,13 @@
     đang trỏ tới đối tượng của lớp nào thì hàm thành phần của lớp đó sẽ được gọi mà không xem xét đến kiểu của con trỏ.
 
 
+    ! Chú ý:
+
+    - Còn một điều đáng chú ý nữa, hàm ảo này có thể không được định nghĩa trong lớp cơ sở mà chỉ được khai báo thôi! 
+    VD: virtual void setsun(int i)=0. Lúc này chúng ta gọi nó là “hàm ảo thuần tuý”.
+
+
 */
-// #include<iostream>
-// #include<cmath>
-// using namespace std;
-
-// class Base{
-// public:
-// 	virtual void print(){
-// 		cout<<"Base class";
-// 	}
-// };
-
-// class Derived : public Base{
-// public:
-// 	void print(){
-// 		cout<<"Derived class";
-// 	}
-// };
-
-// int main() {
-//     Derived drived1;
-//     Base * base1 = &drived1;
-
-//     base1->print();
-
-//     return 0;
-// }
-
-
-
-
 
 //! //////////////////////////////////////////////////////////
 #include <iostream>
@@ -92,9 +68,9 @@ void print(Animal* ani) {
 }
 
 void main(){
-    Animal* animal1 = new Animal();
-    Animal* dog1 = new Dog();
-    Animal* cat1 = new Cat();
+    Animal *animal1 = new Animal();
+    Animal *dog1 = new Dog();
+    Animal *cat1 = new Cat();
 
     print(animal1);
     print(dog1);
