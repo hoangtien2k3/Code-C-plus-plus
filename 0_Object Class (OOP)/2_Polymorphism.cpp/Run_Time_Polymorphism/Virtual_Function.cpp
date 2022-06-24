@@ -17,12 +17,11 @@
     ! Chú ý:
 
     - Còn một điều đáng chú ý nữa, hàm ảo này có thể không được định nghĩa trong lớp cơ sở mà chỉ được khai báo thôi! 
-    VD: virtual void setsun(int i)=0. Lúc này chúng ta gọi nó là “hàm ảo thuần tuý”.
+    ! VD: virtual void setsun(int i) = 0. Lúc này chúng ta gọi nó là “hàm ảo thuần tuý” hay "hàm thuần ảo"
 
 
 */
 
-//! //////////////////////////////////////////////////////////
 #include <iostream>
 #include <string>
 using namespace std;
