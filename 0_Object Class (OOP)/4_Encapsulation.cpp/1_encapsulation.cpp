@@ -26,42 +26,69 @@
 */
 
 #include<iostream>
-
 using namespace std;
 
-class Person {
+class Student {
 private:
-	int id;
-	string name;
-	int age;
-	string address;
+    int id;
+    string name;
+    int age;
+    string address;
+    int score;
 public:
-	Person(int id, string name, int age, string address) {
-		this->id = id;
-		this->name = name;
-		this->age = age;
-		this->address = address;
-	}
-	int getId() {
-		return id;
-	}
-	string getName() {
-		return name;
-	}
-	int getAge() {
-		return age;
-	}
-	string getAddress() {
-		return address;
-	}
+    Student() {}
+    Student(int id, string name, int age, string address, int score) {
+        this->id = id;
+        this->name = name;
+        this->age = age;
+        this->address = address;
+        this->score = score;
+    }
+    void setId(int id) {
+        this->id = id;
+    }
+    int getId() {
+        return this->id;
+    }
+    void setName(string name) {
+        this->name = name;
+    }
+    string getName() {
+        return this->name;
+    }
+    void setAge(int age) {
+        this->age = age;
+    }
+    int getAge() {
+        return this->age;
+    }
+    void setAddress(string address) {
+        this->address = address;
+    }
+    string getAddress() {
+        return this->address;
+    }
+    void setScore(int score) {
+        if (score < 0) this->score = 0;
+        else if (score > 10) this->score = 10;
+        else this->score = score;
+    }
+    int getScore() {
+        return this->score;
+    }
 };
 
 int main() {
-	Person p(1001, "Quynh", 24, "Ha Noi");
-	cout << "Id: " << p.getId() << endl;
-	cout << "Name: " << p.getName() << endl;
-	cout << "Age: " << p.getAge() << endl;
-	cout << "Address: " << p.getAddress() << endl;
+	Student s(1001, "Trung", 24, "Ha Noi", 5);
+	cout << s.getId() << endl;;
+	cout << s.getName() << endl;;
+	cout << s.getAge() << endl;;
+	cout << s.getAddress() << endl;;
+	cout << s.getScore() << endl;;
+	s.setScore(-7);
+	cout << s.getScore() << endl;;
+	s.setScore(15);
+	cout << s.getScore() << endl;;
 	return 0;
 }
 

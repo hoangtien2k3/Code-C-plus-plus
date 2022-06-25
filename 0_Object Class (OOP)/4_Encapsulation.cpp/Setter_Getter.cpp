@@ -1,5 +1,9 @@
 
 /*
+	* Để đảm bảo tính đóng gói của đối tượng trọng class, nên người ta dùng 2 phương thức đó là setter và getter
+		+ setter dùng để cập nhật lại dữ liệu cho các thuộc tính của class mà vẫn đảm bảo tính đóng gói
+		+ getter dùng để trả về giá trị của thuộc tính và vẫn đảm bảo tính đóng gói của class
+		
     ! Syntax: setter
         void set<tên thuộc tính> (<tham số giá trị mới>) {
             this-><tên thuộc tính> = <tham số giá trị mới>;
