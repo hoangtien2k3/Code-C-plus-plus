@@ -43,7 +43,7 @@ class B : public A {
     public: 
         float gpa;
     public:
-        B(string name, string address, float gpa) : A(name, address) { // overriding
+        B(string name, string address, float gpa) : A(name, address) { 
             this->gpa = gpa;
         }
         void print() {

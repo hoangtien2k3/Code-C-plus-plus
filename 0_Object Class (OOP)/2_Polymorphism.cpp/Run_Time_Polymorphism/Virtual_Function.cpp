@@ -63,7 +63,7 @@ public:
 };
 
 void print(Animal* ani) {
-    cout<<"Animal: "<<ani->getType()<< endl;
+    cout << "Animal: " << ani->getType() << endl;
 }
 
 void main(){
