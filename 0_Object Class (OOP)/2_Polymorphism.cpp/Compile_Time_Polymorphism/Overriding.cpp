@@ -46,12 +46,12 @@ class B : public A {
         B(string name, string address, float gpa) : A(name, address) { 
             this->gpa = gpa;
         }
-        void print() {
-            A::print(); // overriding: ghi đè
+        void print() {      // overriding: ghi đè
+            A::print(); 
             cout << gpa << endl;
         }
-        void display() {
-            A::display();
+        void display() {    // overriding: ghi đè
+            A::display(); 
             cout << "Driver class function!!!" << endl;
         }
 };

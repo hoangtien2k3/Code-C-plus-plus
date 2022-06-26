@@ -1,6 +1,6 @@
 
 /*
-    ! Overloading: NẠP CHỒNG (nạp chồng phương thức)
+    ! Overloading:(one thing in many form) NẠP CHỒNG (nạp chồng phương thức)
         - Overloading là một kĩ thuật cho phép trong cùng một class có thể có nhiều phương thức "CÙNG TÊN" nhưng khác nhau 
         về số lượng tham số hoặc kiểu dữ liệu tham số. 
 
@@ -24,7 +24,7 @@ class printData {
         void print(int i) {
             cout << "Printing int: " << i << endl;
         }
-        void print(double  f) {
+        void print(double f) {
             cout << "Printing float: " << f << endl;
         }
         void print(char* c) {
@@ -66,6 +66,8 @@ int main() {
     cout << math.max(3, 5, 7) << endl;
     return 0;
 }
+
+
 
 
 

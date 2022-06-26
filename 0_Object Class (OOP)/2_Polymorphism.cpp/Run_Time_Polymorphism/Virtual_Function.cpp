@@ -1,6 +1,6 @@
 
 /*
-    ! Virtual Function: Hàm ảo
+    ! Virtual Function: Hàm ảo // lớp trừu tượng
     - Hàm ảo (virtual function) là một hàm thành viên trong Cha(base class) mà lớp Con(Driver class) 
     khi kế thừa cần phải định nghĩa lại.
 
@@ -33,7 +33,7 @@ public:
     Animal(){
 		type = "Animal";
 	}
-    virtual string getType(){
+    virtual string getType(){ // lớp trừu tượng
         return type;
     }
 };

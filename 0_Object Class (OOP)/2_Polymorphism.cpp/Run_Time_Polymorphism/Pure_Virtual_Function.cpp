@@ -1,9 +1,9 @@
 
 /*
    ! Pure Virtual Function in C++: Hàm thuần ảo trong C++
-    Hàm thuần ảo Pure Virtual Function được sử dụng khi:
+    Hàm thuần ảo(hàm trừu tượng) "Pure Virtual Function" được sử dụng khi:
         + không cần sử dụng hàm này trong lớp Cha(Base class). mà chỉ phục vụ cho lớp Con(Driver class)
-        + lớp Con(Driver class) bắt buộc phải định nghĩa lại hàm thuần ảo.
+        + lớp Con(Driver class) bắt buộc phải định nghĩa lại hàm thuần ảo.(hay ghi đè phương thức trừu tượng)
 
 
     Example:  Có hai cách để tạo một hàm ảo:
@@ -41,7 +41,7 @@ public:
 
     // pure virtual Function
     // virtual float calculateArea() = 0; // sách 1
-    virtual float calculateArea() {} // cách 2
+    virtual float calculateArea() {} // cách 2 // phương thức trừu tượng
 };
 
 // Derived class
