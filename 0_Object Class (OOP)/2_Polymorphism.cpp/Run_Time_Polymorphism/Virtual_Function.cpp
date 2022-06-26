@@ -42,7 +42,7 @@ class Dog : public Animal{
 private:
 	string type;
 public:
-    Dog(){
+    Dog(){ // constructor
 		type = "Dog";
 	}
     string getType(){
@@ -54,7 +54,7 @@ class Cat : public Animal{
 private:
 	string type;
 public:
-    Cat(){
+    Cat(){ // constructor
 		type = "Cat";
 	}
     string getType(){
