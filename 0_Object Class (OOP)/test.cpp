@@ -5,8 +5,8 @@ class A {
 private:
     int x = 2;
 public:
-    // A() : x(2) {}
-    A(int x = 2) {
+    // A() : x(2) {} // C1 (danh sách khởi tạo)
+    A(int x = 2) { // C2
         this->x = x;
     }
     void funcA() {

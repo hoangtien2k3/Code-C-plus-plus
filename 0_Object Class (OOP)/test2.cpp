@@ -2,35 +2,32 @@
 #include <iostream>
 using namespace std;
 
-class Base {
-   private:
-    int pvt = 1;
-
-   protected:
-    int prot = 2;
-
-   public:
-    int pub = 3;
-
-    // function to access private member
-    int getPVT() {
-        return pvt;
+class A {
+public:
+    A() {
+        cout << "A";
+    }
+    ~A() {
+        cout << "B";
     }
 };
 
-class PublicDerived : public Base {
-   public:
-    // function to access protected member from Base
-
-    int getProt() {
-        return prot;
+class B : public A {
+public:
+    B() : A() {
+        cout << "C";
+    }
+    ~B() {
+        cout << "D";
     }
 };
+
+void agc(B b) {
+
+}
 
 int main() {
-    PublicDerived object1;
-    cout << "Private = " << object1.getPVT() << endl;
-    cout << "Protected = " << object1.getProt() << endl;
-    cout << "Public = " << object1.pub << endl;
-    return 0;
+    B b;
+    agc(b);
+
 }

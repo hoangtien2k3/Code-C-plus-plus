@@ -5,13 +5,16 @@
         + Static trong c++ tồn tại như một biến toàn cục. 
         + Hay nói cách khác dữ liệu static xuất hiện trước khi bạn khởi tạo đối tượng của lớp, 
         và nó chỉ tồn tại duy nhất.
+        + Vùng nhớ của biến static chỉ được cấp pháp 1 lần và giá trị của biến trong những lần gọi 
+        trước đó được lưu lại và thực hiện trong những lần gọi tiếp theo.
+
+
 
     - Các thành viên static có thể là public, private hoặc protected.
 
     - Static ngoài khai báo biến còn có thể khai báo hàm.
 
     ! LƯU Ý: các biến static không được coi như là thuộc tính của một lớp.
-
 
 
     Đối với class, static dùng để khai báo thành viên dữ liệu dùng chung cho mọi thể hiện của lớp:
