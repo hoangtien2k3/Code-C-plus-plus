@@ -14,14 +14,14 @@ public:
 	}
 };
 
-class Traingle : public Geometry {
+class Triangle : public Geometry {
 private:
 	int a;
 	int b;
 	int c;
 public:
-	Traingle() {}
-	Traingle(int a, int b, int c) : a(a), b(b), c(c) {}
+	Triangle() {}
+	Triangle(int a, int b, int c) : a(a), b(b), c(c) {}
 	double perimeter() {
 		return a + b + c;
 	}
@@ -65,7 +65,7 @@ int main(){
 	cout << "Nhap thong so hinh chu nhat: "; cin >> d >> e;
 	cout << "Nhap thong so hinh tron: "; cin >> r ;
 	Geometry * g[3];
-	g[0] = new Traingle(a, b, c);
+	g[0] = new Triangle(a, b, c);
 	g[1] = new Rectangle(d, e);
 	g[2] = new Circle(r);
 	for(int i=0; i < 3 ;i++){
