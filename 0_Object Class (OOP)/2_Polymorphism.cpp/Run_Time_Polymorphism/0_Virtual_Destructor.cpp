@@ -43,7 +43,7 @@ int main()
 }
 
 => Với lớp con như trên, mặc dù định nghĩa phương thức để giải phóng m_array nhưng phương thức của lớp con không được gọi. 
-Có nghĩa là chương tình đã rò rỉ 1024*4 bytes bộ nhớ.
+Có nghĩa là chương tình đã rò rỉ 1024 * 4 bytes bộ nhớ.
 
 
 
@@ -68,7 +68,7 @@ public:
 class Derived : public Base
 {
 private:
-	int* m_array;
+	int * m_array;
 public:
 	Derived() { this->m_array = new int[1024]; };
 	~Derived()
