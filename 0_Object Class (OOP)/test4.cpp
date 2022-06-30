@@ -127,7 +127,7 @@ int main()
     vt1.push_back(Student("Mr.The", 2, 3, 1));  
     vt1.push_back(Student("Mr.End", 4, 6, 8));  
 
-    vector<Student>vt2 = Student::getStudentMaxAvg(vt1); // gọi hàm getStudentMaxAvg() của vector vt1 và gán cho vector vt2
+    vector<Student> vt2 = Student::getStudentMaxAvg(vt1); // gọi hàm getStudentMaxAvg() của vector vt1 và gán cho vector vt2
     
 
     /*for(int i=0;i<Student::getStudentMaxAvg(vt1).size();i++)
