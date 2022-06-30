@@ -27,6 +27,8 @@ public:
 
 int main() {
     B *b = new B();
-    b->funcA();
 
+    b->funcA();
+    
+    return 0;
 }
