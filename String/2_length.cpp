@@ -1,5 +1,6 @@
 
-/*  C++ sTRING length() :
+/*  
+    ! C++ String length() : It's used to find the length of the string.
 
     This function is used to find the length of the string in terms of bytes.
 
@@ -20,14 +21,15 @@
 */
 
 #include<iostream>  
-using  namespace std;  
+using  namespace std;
+
 int main()  
 {  
     string s1 = "Welcome to javatpoint";  // 21 ký tự tính cả khoảng trắng
 
     int len = s1.length();  
 
-    cout<< "length of the string is : " << len;  
+    cout << "length of the string is : " << len << endl; 
 
     return 0;  
 } 

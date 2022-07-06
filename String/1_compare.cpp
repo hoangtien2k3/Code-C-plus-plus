@@ -1,5 +1,6 @@
 
-/*  C++ String compare:
+/*  
+    ! C++ String compare: It is used to compare two string objects.
 
     Syntax :
                 int k = str1.compare(str2);  
@@ -21,9 +22,9 @@ int main()
     string str2 = "Welcome to javatpoint";  
     int k = str1.compare(str2);  
     if(k == 0)  
-        cout<<"strings are equal";  
+        cout << "strings are equal";  
     else  
-        cout<<"strings are not equal";  
+        cout << "strings are not equal";  
 
     return 0;
 }  
